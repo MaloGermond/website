@@ -1,0 +1,69 @@
+Title: Codons la maille
+
+----
+
+Titre: Let's coding the mesh
+
+----
+
+Text:
+
+Codons la Maille est un périphérique nouveau accompagné d’une application permettant de porter un regard différent sur l’informatique en montrant le code de manière ludique et palpable.
+L’ordinateur est une machine automatisée amenant à des usages prédéfinis qui ne nécessitent pas de connaître son fonctionnement.
+Voir le langage informatique, c’est-à-dire le code et sa logique, permet de révéler les répétitions, de les détourner, pour ouvrir l’usage sur d’autres possibilités. L’enjeu de ce périphérique est de permettre à l’utilisateur de manipuler le code et sa logique. Il se lit et s’écrit à travers le regard et la manipulation d’un outil ayant des ressemblances avec l’informatique, la machine à tricoter.
+## Le dispositif
+Dans un programme, les données d’un ordinateur sont comme les mailles d’un tricot, ce sont de petits éléments, qui mis en forme et assemblées par le code, interagissent entre eux et créent un ensemble lisible et compréhensible. Pratiquer la machine à tricoter nous amène à comprendre son fonctionnement : c’est à dire comment sa matière, la laine se forme en maille puis en tricot.
+ (image: 02.jpg)
+## Le mode d'emploi
+Édition accompagnant l'interface qui liste les différents éléments et explique leurs fonctionnements.
+(image: 12.jpg)
+(image: 09.jpg)
+(image: 10.jpg)
+(image: 04.jpg caption: Échantillons qui ont été tricotés à la main et dont le dessin a été composé à l’aide de l'application.)
+(image: 03.jpg)
+## Exposition
+(image: ddays03.jpg)
+(image: ddays02.jpg)
+(image: 17.jpg)
+(image: 18.jpg)
+(image: 16.jpg)
+(image: ddays01.jpg)
+(image: 14.jpg)
+(image: 15.jpg)
+(image: 13.jpg)
+
+----
+
+Date: 2016-06-26 20:45
+
+----
+
+Placeholder:
+
+- 01.jpg
+
+----
+
+Caption: Codons la Maille est un périphérique nouveau accompagné d’une application permettant de porter un regard différent sur l’informatique en montrant le code de manière ludique et palpable. L’ordinateur est une machine automatisée amenant à des usages prédéfinis qui ne nécessitent pas de connaître son fonctionnement.
+
+----
+
+Author:
+
+- As3k08sS
+
+----
+
+Tags: Diplôme, Graphisme, UI
+
+----
+
+Gallery: 
+
+----
+
+Exhibition: Bienale de Saint-étienne 2017, D-days 2017
+
+----
+
+Coauthor: 

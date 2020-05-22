@@ -1,0 +1,53 @@
+Title: Malo Germond - Designer
+
+----
+
+Text:
+
+### Je suis Malo, designer produit / numériques basé à Marseille. Spécialisé dans la conception d'interfaces, avec un intérêt pour les objets connecté et le développement sur le web.
+### Je travaille actuellement chez [Privowny](https://privowny.io/) pour apporter un moyen plus simple de protéger les données des utilisateurs.
+### Auparavant, j'ai travaillé à l'[esadmm](http://esadmm.fr/) et l'[ensci](https://www.ensci.com/ensci-les-ateliers/) en tant qu'assistante en design.
+
+----
+
+Project: 
+
+----
+
+Description:
+
+Je suis designer
+J’utilise sketch pour mes interfaces et illustrator pour mes illustrations.
+Je code en Javascript pour à peu près tout (React, NodeJS) et Processing pour mes maquettes.
+Je modélise sous Rhino pour l’industriel et sous Blender pour faire des rendus 3D.
+J’aime dessiner avec mes crayons ;)
+
+----
+
+Pages:
+
+- codons-la-maille
+- label-fukushima
+- parois
+- westin-lessage
+- love-me-bender
+- note
+- resonance
+- times
+- sgem
+
+----
+
+Author: 
+
+----
+
+Articles: - codons-la-maille
+
+----
+
+Publish: 
+
+----
+
+Sketch: 

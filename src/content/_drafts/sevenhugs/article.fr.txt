@@ -1,0 +1,45 @@
+Title: Sevenhugs
+
+----
+
+Titre: Sevenhugs
+
+----
+
+Text:
+
+(image: 02.jpg)
+
+(image: 01.gif)
+
+(image: label.gif)
+
+----
+
+Date: 2017-01-01 18:20
+
+----
+
+Placeholder: 
+
+----
+
+Caption: 
+
+----
+
+Author:
+
+- As3k08sS
+
+----
+
+Tags: Objet, Numérique, Interface
+
+----
+
+Exhibition: 
+
+----
+
+Coauthor: Eliumstudio

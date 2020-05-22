@@ -1,0 +1,79 @@
+Title: Parois
+
+----
+
+Titre: Parois numérique
+
+----
+
+Text:
+
+Parois est un projet permettant le cloisonnement d'un open-space à l'aide de parois paramétriques.
+Nous nous sommes intéressés aux espaces partagés qui demandent de trouver un équilibre entre l’espace privé et public.
+Nous avons fait la proposition de mettre en place un protocole de travail pour un « artisan numérique», qui serait amené à manipuler des outils numériques comme l'impression 3D, la découpe laser, etc.
+L'artisan réalise des parois qui s’adaptent au lieu à l'aide d'un programme. La réponse est au cas par cas, dans un premier temps grâce à une simple prise de côte, le programme propose un pied construit à l’aide d’un modèle paramétrique afin qu'il puisse s'adapter à toutes les tables. Il permet aussi de choisir la taille de chaque module.
+Dans un second temps à l'aide du programme l'artisan peut proposer un  moirage qui sera découpé sur la paroi à l'aide de la découpeuse laser. Cela permet de concevoir un espace plus ou moins ouvert sur l’extérieure.
+
+(image: 03.jpg)
+
+(image: 02.jpg)
+
+(image: 05.jpg)
+
+(image: 04.jpg)
+
+(image: 01.jpg)
+
+(image: 06.gif)
+
+(image: 08.jpg)
+
+(image: 09.jpg)
+
+(image: 10.jpg)
+
+(image: 07.jpg)
+
+(image: 11.jpg)
+
+(image: 12.jpg)
+
+(image: 14.jpg)
+
+(image: 13.jpg)
+
+(image: 16.jpg)
+
+(image: 15.jpg)
+
+----
+
+Date: 2019-12-01 17:15
+
+----
+
+Placeholder:
+
+- label.jpg
+
+----
+
+Caption: Parois est un projet permettant le cloisonnement d'un open-space à l'aide de parois paramétriques.
+
+----
+
+Author:
+
+- As3k08sS
+
+----
+
+Tags: 
+
+----
+
+Exhibition: 
+
+----
+
+Coauthor: 

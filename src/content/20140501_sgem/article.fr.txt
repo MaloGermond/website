@@ -1,0 +1,57 @@
+Title: SGEM
+
+----
+
+Titre: SGEM
+
+----
+
+Text:
+
+Système Graphique Élémentaire Modulaire
+SGEM (système graphique élémentaire modulaire) est un travail autour de la structure des objets. Inspiré des différents principes d’assemblage en menuiserie : le tenon et la mortaise, l’assemblage par cheville, etc. Ce jeu de construction permet de construire rapidement et facilement des structures complexes tout en expérimentant cette notion d’assemblage.
+(image: 03.jpg)
+
+(image: 02.jpg)
+
+(image: 01.jpg)
+
+(image: 04.jpg)
+
+(image: 06.jpg)
+
+(image: 05.jpg)
+
+(image: 07.jpg)
+
+----
+
+Date: 2014-05-01 18:20
+
+----
+
+Placeholder:
+
+- label.jpg
+
+----
+
+Caption: 
+
+----
+
+Author:
+
+- As3k08sS
+
+----
+
+Tags: Objet, Numérique
+
+----
+
+Exhibition: 
+
+----
+
+Coauthor: 
