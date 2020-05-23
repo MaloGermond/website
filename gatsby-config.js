@@ -6,7 +6,7 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: "/website",
+  pathPrefix: "/",
   plugins: [
     `gatsby-plugin-styled-components`,
     {
