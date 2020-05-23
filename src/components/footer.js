@@ -10,33 +10,20 @@ const Link = styled.a`
 
 function Footer() {
   return (
-    <footer class="sticky">
+    <footer className="sticky">
       <Link
-        className={styles.link}
         href="https://github.com/MaloGermond?tab=repositories"
         target="_blank"
       >
         Github
       </Link>
-      <Link
-        className={styles.link}
-        href="https://www.linkedin.com/in/malogermond/"
-        target="_blank"
-      >
+      <Link href="https://www.linkedin.com/in/malogermond/" target="_blank">
         Linkedin
       </Link>
-      <Link
-        className={styles.link}
-        href="https://twitter.com/MaloGermond"
-        target="_blank"
-      >
+      <Link href="https://twitter.com/MaloGermond" target="_blank">
         Twitter
       </Link>
-      <Link
-        className={styles.link}
-        href="http://www.malogermond.net/"
-        target="_blank"
-      >
+      <Link href="http://www.malogermond.net/" target="_blank">
         Old website
       </Link>
     </footer>
