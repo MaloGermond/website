@@ -28,7 +28,7 @@
 =================================*/
 
 a {
-  font-family: inherit;
+  font-family: "Roobert Bold", sans-serif;
   color: var(--colors-onbackground--low);
   text-decoration-line: none;
   border-bottom: var(--colors-secondary);
