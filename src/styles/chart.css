@@ -99,7 +99,18 @@ h6 {
 
 :root {
   --colors-primary: #f98686;
-  --colors-secondary: #ffdbe3;
+  --colors-secondary: #2d2c31;
+
+  --colors-primary-050: #feebef;
+  --colors-primary-100: #fcced5;
+  --colors-primary-200: #f98686;
+  --colors-primary-300: #e1757a;
+  --colors-primary-400: #ec555a;
+  --colors-primary-500: #ffe9ec;
+  --colors-primary-600: #ffe9ec;
+  --colors-primary-700: #ffe9ec;
+  --colors-primary-800: #ffe9ec;
+  --colors-primary-900: #ffe9ec;
 
   --colors-surface-050: #ffffff;
   --colors-surface-100: #fafafa;
@@ -108,6 +119,12 @@ h6 {
 
   --colors-onprimary: var(--color-surface-900);
   --colors-onsecondary: var(--color-surface-900);
+
+  --colors-background-low: var(--color-surface-050);
+  --colors-background-high: var(--color-surface-900);
+
+  --colors-onbackground-low: var(--color-surface-050);
+  --colors-onbackground-high: var(--color-surface-900);
 
   --box-shadow-1: 0 1px 1px 0 rgba(34, 46, 60, 0.07),
     0 2px 1px -1px rgba(34, 46, 60, 0.12), 0 1px 3px 0 rgba(34, 46, 60, 0.2);

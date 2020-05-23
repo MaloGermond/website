@@ -7,7 +7,13 @@ const Footer = () => (
       href="https://github.com/MaloGermond?tab=repositories"
       class="onSurface900"
     >
-      <div>Github</div>
+      Github
+    </a>
+    <a href="https://www.linkedin.com/in/malogermond/" class="onSurface900">
+      Linkedin
+    </a>
+    <a href="https://twitter.com/MaloGermond" class="onSurface900">
+      Twiter
     </a>
   </footer>
 )
