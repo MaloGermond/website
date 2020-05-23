@@ -6,7 +6,12 @@ footer {
   margin-top: 4rem;
 }
 
-a {
+.link {
   margin: 1rem;
-  color: var(--colors-onbackground-low) !important;
+  color: var(--colors-onbackground-low);
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
 }

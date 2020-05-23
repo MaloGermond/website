@@ -29,11 +29,11 @@
 
 a {
   font-family: inherit;
-  color: black;
+  color: var(--colors-onbackground--low);
   text-decoration-line: none;
   border-bottom: var(--colors-secondary);
   border-bottom-style: solid;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 a:hover {
@@ -58,6 +58,7 @@ h4,
 h5,
 h6 {
   font-family: "Roobert Bold", sans-serif;
+  margin-top: 1rem;
 }
 
 h1 {

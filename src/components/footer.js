@@ -1,21 +1,32 @@
 import React from "react"
 import styles from "./footer.css"
 
-const Footer = () => (
-  <footer>
-    <a
-      href="https://github.com/MaloGermond?tab=repositories"
-      class="onSurface900"
-    >
-      Github
-    </a>
-    <a href="https://www.linkedin.com/in/malogermond/" class="onSurface900">
-      Linkedin
-    </a>
-    <a href="https://twitter.com/MaloGermond" class="onSurface900">
-      Twiter
-    </a>
-  </footer>
-)
+function Footer() {
+  return (
+    <footer>
+      <a
+        className={styles.link}
+        href="https://github.com/MaloGermond?tab=repositories"
+        target="_blank"
+      >
+        Github
+      </a>
+      <a
+        className={styles.link}
+        href="https://www.linkedin.com/in/malogermond/"
+        target="_blank"
+      >
+        Linkedin
+      </a>
+      <a
+        className={styles.link}
+        href="https://twitter.com/MaloGermond"
+        target="_blank"
+      >
+        Twitter
+      </a>
+    </footer>
+  )
+}
 
 export default Footer
