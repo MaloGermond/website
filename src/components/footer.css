@@ -4,14 +4,12 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.link {
-  margin: 1rem;
-  color: var(--colors-onbackground-low);
-}
-
-.bottom {
-  position: absolute;
+.sticky {
+  position: fixed;
   bottom: 0;
 }

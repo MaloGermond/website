@@ -11,3 +11,9 @@ article {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+@media screen and (max-width: 640px) {
+  article {
+    margin: 1rem;
+  }
+}

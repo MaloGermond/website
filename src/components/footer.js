@@ -1,30 +1,44 @@
 import React from "react"
 import styles from "./footer.css"
+import styled from "styled-components"
+
+const Link = styled.a`
+  font-family: "Open sans";
+  margin: 0.5rem;
+  color: var(--colors-onbackground-low);
+`
 
 function Footer() {
   return (
-    <footer>
-      <a
+    <footer class="sticky">
+      <Link
         className={styles.link}
         href="https://github.com/MaloGermond?tab=repositories"
         target="_blank"
       >
         Github
-      </a>
-      <a
+      </Link>
+      <Link
         className={styles.link}
         href="https://www.linkedin.com/in/malogermond/"
         target="_blank"
       >
         Linkedin
-      </a>
-      <a
+      </Link>
+      <Link
         className={styles.link}
         href="https://twitter.com/MaloGermond"
         target="_blank"
       >
         Twitter
-      </a>
+      </Link>
+      <Link
+        className={styles.link}
+        href="http://www.malogermond.net/"
+        target="_blank"
+      >
+        Old website
+      </Link>
     </footer>
   )
 }

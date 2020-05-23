@@ -7,9 +7,9 @@ const Home = () => (
     <section>
       <article>
         <h4>
-          Je suis Malo, designer produit / numériques basé à Marseille.
-          Spécialisé dans la conception d'interfaces, avec un intérêt pour les
-          objets connecté et le développement sur le web.
+          Je suis Malo, designer produit basé à Marseille. Spécialisé dans la
+          conception d'interfaces, avec un intérêt pour les objets connecté et
+          le développement sur le web.
         </h4>
         <h4>
           Je travaille actuellement chez{" "}
