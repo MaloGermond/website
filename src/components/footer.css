@@ -1,12 +1,11 @@
 footer {
-  width: 100%;
   background-color: var(--colors-surface-100);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 2rem;
   margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
+  width: 100%;
 }
 
 .sticky {

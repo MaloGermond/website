@@ -12,9 +12,18 @@ const Link = styled.a`
   color: var(--colors-onbackground-low);
 `
 
+const Caption = styled.p`
+  font-size: 0.8rem;
+  color: var(--colors-onbackground-low);
+  align-self: center;
+`
+
 function Footer() {
   return (
     <footer class="sticky">
+      <Caption>
+        Copyright © 2016 - 2020 - All Rights Reserved - Marseille{" "}
+      </Caption>
       <div class="link">
         <Link
           className={styles.link}
