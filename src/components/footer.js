@@ -4,6 +4,7 @@ import styled from "styled-components"
 import twitter from "../../src/images/Twitter.svg"
 import github from "../../src/images/Github.svg"
 import linkedin from "../../src/images/Linkedin.svg"
+import oldwebsite from "../../src/images/oldwebsite.svg"
 
 const Link = styled.a`
   font-family: "Open sans";
@@ -19,28 +20,28 @@ function Footer() {
         href="https://github.com/MaloGermond?tab=repositories"
         target="_blank"
       >
-        <img src={github} alt="github logo"></img>
+        <svg src={github} alt="github logo"></svg>
       </Link>
       <Link
         className={styles.link}
         href="https://www.linkedin.com/in/malogermond/"
         target="_blank"
       >
-        <img src={linkedin} alt="linkedin logo"></img>
+        <svg src={linkedin} alt="linkedin logo"></svg>
       </Link>
       <Link
         className={styles.link}
         href="https://twitter.com/MaloGermond"
         target="_blank"
       >
-        <img src={twitter} alt="twitter logo"></img>
+        <svg src={twitter} alt="twitter logo"></svg>
       </Link>
       <Link
         className={styles.link}
         href="http://www.malogermond.net/"
         target="_blank"
       >
-        Old website
+        <svg src={oldwebsite} alt="oldwebsite logo"></svg>
       </Link>
     </footer>
   )

@@ -13,3 +13,7 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
+footer svg {
+  height: 2rem;
+}
