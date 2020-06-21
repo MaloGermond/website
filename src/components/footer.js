@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "./footer.css"
 import styled from "styled-components"
-import twitter from "../../src/images/Twitter.svg"
-import github from "../../src/images/Github.svg"
-import linkedin from "../../src/images/Linkedin.svg"
-import oldwebsite from "../../src/images/oldwebsite.svg"
+import Twitter from "../../src/assets/Twitter.svg"
+import Github from "../../src/assets/Github.svg"
+import Linkedin from "../../src/assets/Linkedin.svg"
+import Oldwebsite from "../../src/assets/Oldwebsite.svg"
 
 const Link = styled.a`
   font-family: "Open sans";
@@ -15,34 +15,36 @@ const Link = styled.a`
 function Footer() {
   return (
     <footer class="sticky">
-      <Link
-        className={styles.link}
-        href="https://github.com/MaloGermond?tab=repositories"
-        target="_blank"
-      >
-        <svg src={github} alt="github logo"></svg>
-      </Link>
-      <Link
-        className={styles.link}
-        href="https://www.linkedin.com/in/malogermond/"
-        target="_blank"
-      >
-        <svg src={linkedin} alt="linkedin logo"></svg>
-      </Link>
-      <Link
-        className={styles.link}
-        href="https://twitter.com/MaloGermond"
-        target="_blank"
-      >
-        <svg src={twitter} alt="twitter logo"></svg>
-      </Link>
-      <Link
-        className={styles.link}
-        href="http://www.malogermond.net/"
-        target="_blank"
-      >
-        <svg src={oldwebsite} alt="oldwebsite logo"></svg>
-      </Link>
+      <div class="link">
+        <Link
+          className={styles.link}
+          href="https://github.com/MaloGermond?tab=repositories"
+          target="_blank"
+        >
+          <Github />
+        </Link>
+        <Link
+          className={styles.link}
+          href="https://www.linkedin.com/in/malogermond/"
+          target="_blank"
+        >
+          <Linkedin />
+        </Link>
+        <Link
+          className={styles.link}
+          href="https://twitter.com/MaloGermond"
+          target="_blank"
+        >
+          <Twitter />
+        </Link>
+        <Link
+          className={styles.link}
+          href="http://www.malogermond.net/"
+          target="_blank"
+        >
+          <Oldwebsite />
+        </Link>
+      </div>
     </footer>
   )
 }

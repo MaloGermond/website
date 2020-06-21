@@ -14,6 +14,29 @@ footer {
   bottom: 0;
 }
 
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 footer svg {
   height: 2rem;
+  width: 2rem;
+  fill: red;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+footer svg:hover {
+  opacity: 1;
+}
+
+footer a {
+  border-bottom-style: none;
+}
+
+footer a:hover {
+  border-bottom-style: none;
 }
