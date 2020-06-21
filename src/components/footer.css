@@ -6,6 +6,8 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  box-sizing: border-box;
+}
 }
 
 .sticky {
