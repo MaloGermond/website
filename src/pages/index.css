@@ -8,7 +8,6 @@ article {
   padding-bottom: 2rem;
   box-sizing: border-box;
 }
-}
 
 @media screen and (max-width: 640px) {
   article {
