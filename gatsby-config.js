@@ -10,6 +10,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
+      // use to load svg
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Malo Germond Designer UI`,
