@@ -6,6 +6,8 @@ article {
   max-width: 650px;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  box-sizing: border-box;
+}
 }
 
 @media screen and (max-width: 640px) {
