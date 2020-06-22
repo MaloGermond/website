@@ -1,9 +1,9 @@
 import React from "react"
-import Footer from "../components/footer.js"
+import Layout from "../components/layout.js"
 import Style from "./index.css"
 
 const Home = () => (
-  <div>
+  <Layout>
     <section>
       <article>
         <h4>
@@ -32,8 +32,7 @@ const Home = () => (
         </h4>
       </article>
     </section>
-    <Footer></Footer>
-  </div>
+  </Layout>
 )
 
 export default Home
