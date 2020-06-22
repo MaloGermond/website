@@ -28,7 +28,7 @@ module.exports = {
         Je code en Javascript pour à peu près tout (React, NodeJS) et Processing pour mes maquettes.
         Je modélise sous Rhino pour l’industriel et sous Blender pour faire des rendus 3D.
         J’aime dessiner avec mes crayons ;)`,
-        lang: `fr`,
+        lang: `FR-fr`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#f98686`,
