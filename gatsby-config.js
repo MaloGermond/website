@@ -8,6 +8,7 @@ module.exports = {
   /* Your site config here */
   pathPrefix: "/website",
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
       // use to load svg
@@ -49,5 +50,5 @@ module.exports = {
     display: `standalone`,
     icon: `src/assets/favicon.png`, // This path is relative to the root of the site.
   },
-},  
+},
 */
