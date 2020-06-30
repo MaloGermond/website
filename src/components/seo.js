@@ -13,6 +13,7 @@ function SEO({ title, description, lang, pathname }) {
             author
             keywords
             siteUrl
+            icon
           }
         }
       }
@@ -21,11 +22,12 @@ function SEO({ title, description, lang, pathname }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const canonical = pathname ? `http://malogermond.fr${pathname}` : null
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
     <Helmet
       title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       htmlAttributes={{
         lang,
       }}
@@ -38,21 +40,41 @@ function SEO({ title, description, lang, pathname }) {
           name: "keywords",
           content: site.siteMetadata.keywords,
         },
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.author,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          contents: metaDescription,
+        },
       ]}
-      link={
-        canonical
-          ? [
-              {
-                rel: "canonical",
-                href: canonical,
-              },
-            ]
-          : []
-      }
     ></Helmet>
   )
 }
 
-SEO.defaultProps = { title: "Malo Germond", lang: "FR-fr", pathname: "/" }
+SEO.defaultProps = {
+  title: "Malo Germond",
+  lang: "FR-fr",
+  pathname: "/",
+  meta: [],
+  description: ``,
+}
 
 export default SEO
