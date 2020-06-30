@@ -20,11 +20,11 @@ const Caption = styled.p`
 
 function Footer() {
   return (
-    <footer class="sticky">
+    <footer className="sticky">
       <Caption>
         Copyright © 2016 - 2020 - All Rights Reserved - Marseille{" "}
       </Caption>
-      <div class="link">
+      <div className="link">
         <Link
           className={styles.link}
           href="https://github.com/MaloGermond?tab=repositories"
