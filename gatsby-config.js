@@ -13,7 +13,7 @@ module.exports = {
     Je modélise sous Rhino pour l’industriel et sous Blender pour faire des rendus 3D.
     J’aime dessiner avec mes crayons ;)`,
     author: `Malo Germond`,
-    keywords: `Design, UI, Visual, Digital, Numerique`,
+    keywords: `Design, UI, UX, Marseille, Freelance, Webdesign, Visual, Digital, Numerique, Designer, Design system, Motion`,
     siteUrl: `https://malogermond.fr`,
     icon: `src/assets/favicon.png`,
   },
