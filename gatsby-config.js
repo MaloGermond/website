@@ -5,6 +5,18 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Malo Germond`,
+    description: `Je suis designer
+    J’utilise sketch pour mes interfaces et illustrator pour mes illustrations.
+    Je code en Javascript pour à peu près tout (React, NodeJS) et Processing pour mes maquettes.
+    Je modélise sous Rhino pour l’industriel et sous Blender pour faire des rendus 3D.
+    J’aime dessiner avec mes crayons ;)`,
+    author: `Malo Germond`,
+    keywords: `Design, UI, Visual, Digital, Numerique`,
+    siteUrl: `https://malogermond.fr`,
+    icon: `src/assets/favicon.png`,
+  },
   /* Your site config here */
   pathPrefix: "/website",
   plugins: [
