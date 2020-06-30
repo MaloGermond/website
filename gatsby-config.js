@@ -21,6 +21,16 @@ module.exports = {
   pathPrefix: "/website",
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        start_url: `/`,
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: `standalone`,
+        icon: `src/assets/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       // use to load svg
