@@ -2,10 +2,10 @@ import React from "react"
 import Footer from "../components/footer.js"
 import SEO from "../components/seo.js"
 
-function Layout({ children }) {
+function Layout({ children, pathname }) {
   return (
     <div>
-      <SEO />
+      <SEO pathname={pathname} />
       <div>{children}</div>
       <Footer />
     </div>
