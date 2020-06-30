@@ -29,6 +29,7 @@ function Footer() {
           className={styles.link}
           href="https://github.com/MaloGermond?tab=repositories"
           target="_blank"
+          alt="github logo"
         >
           <Github />
         </Link>
@@ -36,6 +37,7 @@ function Footer() {
           className={styles.link}
           href="https://www.linkedin.com/in/malogermond/"
           target="_blank"
+          alt="Linkedin logo"
         >
           <Linkedin />
         </Link>
@@ -43,6 +45,7 @@ function Footer() {
           className={styles.link}
           href="https://twitter.com/MaloGermond"
           target="_blank"
+          alt="Twitter logo"
         >
           <Twitter />
         </Link>
@@ -50,6 +53,7 @@ function Footer() {
           className={styles.link}
           href="http://www.malogermond.net/"
           target="_blank"
+          alt="My old website logo"
         >
           <Oldwebsite />
         </Link>
