@@ -1,17 +1,12 @@
 footer {
   background-color: var(--colors-surface-100);
   padding: 2rem;
-  margin-top: 4rem;
+  /*margin-top: 4rem; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
-}
-
-.sticky {
-  position: fixed;
-  bottom: 0;
 }
 
 .externalLink {
