@@ -17,7 +17,7 @@ const Colophon = styled.div``
 
 function Footer() {
   return (
-    <footer className="sticky">
+    <footer>
       <Colophon>
         <Caption>
           Copyright © 2016 - 2020 - All Rights Reserved - Marseille{" "}
