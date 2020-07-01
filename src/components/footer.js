@@ -1,62 +1,57 @@
 import React from "react"
-import styles from "./footer.css"
+import style from "./footer.css"
 import styled from "styled-components"
 import Twitter from "../../src/assets/Twitter.svg"
 import Github from "../../src/assets/Github.svg"
 import Linkedin from "../../src/assets/Linkedin.svg"
 import Oldwebsite from "../../src/assets/Oldwebsite.svg"
-
-const Link = styled.a`
-  font-family: "Open sans";
-  margin: 0.5rem;
-  color: var(--colors-onbackground-low);
-`
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Caption = styled.p`
   font-size: 0.8rem;
   color: var(--colors-onbackground-low);
-  align-self: center;
+  text-align: center;
 `
+
+const Colophon = styled.div``
 
 function Footer() {
   return (
-    <footer className="sticky">
-      <Caption>
-        Copyright © 2016 - 2020 - All Rights Reserved - Marseille{" "}
-      </Caption>
-      <div className="link">
-        <Link
-          className={styles.link}
+    <footer>
+      <Colophon>
+        <Caption>
+          Copyright © 2016 - 2020 - All Rights Reserved - Marseille{" "}
+        </Caption>
+      </Colophon>
+      <div className="externalLink">
+        <OutboundLink
           href="https://github.com/MaloGermond?tab=repositories"
           target="_blank"
           alt="github logo"
         >
           <Github />
-        </Link>
-        <Link
-          className={styles.link}
+        </OutboundLink>
+        <OutboundLink
           href="https://www.linkedin.com/in/malogermond/"
           target="_blank"
           alt="Linkedin logo"
         >
           <Linkedin />
-        </Link>
-        <Link
-          className={styles.link}
+        </OutboundLink>
+        <OutboundLink
           href="https://twitter.com/MaloGermond"
           target="_blank"
           alt="Twitter logo"
         >
           <Twitter />
-        </Link>
-        <Link
-          className={styles.link}
+        </OutboundLink>
+        <OutboundLink
           href="http://www.malogermond.net/"
           target="_blank"
           alt="My old website logo"
         >
           <Oldwebsite />
-        </Link>
+        </OutboundLink>
       </div>
     </footer>
   )
