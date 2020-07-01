@@ -13,26 +13,26 @@ const Home = () => (
           le développement sur le web.
         </h4>
         <h4>
-          Je travaille actuellement chez{" "}
+          {"Je travaille actuellement chez"}
           <OutboundLink href=" https://privowny.io/" target="_blank">
             Privowny
-          </OutboundLink>{" "}
+          </OutboundLink>
           pour apporter un moyen plus simple de protéger les données des
           utilisateurs.
         </h4>
         <h4>
-          Auparavant, j'ai travaillé à l'
+          {"Auparavant, j'ai travaillé à l'"}
           <OutboundLink href=" http://esadmm.fr/" target="_blank">
             Esadmm
-          </OutboundLink>{" "}
-          et l'
+          </OutboundLink>
+          {"et l'"}
           <OutboundLink
             href=" https://www.ensci.com/ensci-les-ateliers/"
             target="_blank"
           >
             ensci
-          </OutboundLink>{" "}
-          comme assistant en design.
+          </OutboundLink>
+          comme assistant d'enseignement en design.
         </h4>
       </article>
     </section>
