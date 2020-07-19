@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout.js"
-import Style from "./index.css"
+import "./index.css"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Home = () => (
