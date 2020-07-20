@@ -17,6 +17,7 @@ export default function Manifest() {
       }
     }
   `)
+  console.log(data.markdownRemark.htmlAst)
   return (
     <Layout>
       <div

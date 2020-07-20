@@ -21,7 +21,7 @@ Ceci ne doit pas être considère comme un nouveaux paragraphe[^1].
 Par contre ceci est bien un nouveau paragraphe. 😅
 Voici un lien vers la **homepage** du site [Je suis un lien souligné](https://www.malogermond.fr)
 
-!(Voici une image)[https://source.unsplash.com/random]
+![Voici un example d'image](./iphone.png)
 
 - Bullet point
   - Bullet point
