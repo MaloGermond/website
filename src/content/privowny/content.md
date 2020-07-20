@@ -9,6 +9,8 @@ Pour mettre en oeuvre cette solution, plusieurs produits ont été développés.
 tag: "interface, application"
 ---
 
+![](./artboard.png)
+
 # Un produit en marque blanche
 
 # Un Design System pour n'importe qu'elle marque
