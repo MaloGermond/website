@@ -48,6 +48,8 @@ module.exports = {
         path: `${__dirname}/src/content/`,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

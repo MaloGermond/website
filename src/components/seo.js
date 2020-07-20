@@ -22,8 +22,6 @@ function SEO({ title, description, lang, pathname }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
-
   return (
     <Helmet
       title={title}
@@ -78,3 +76,11 @@ SEO.defaultProps = {
 }
 
 export default SEO
+
+/*
+
+Unused...
+
+const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+
+*/
