@@ -17,6 +17,7 @@ description: "Cette page est destiné à tester l'ensemble des régles mise en p
 
 Voici un paragraphe. <br/> Et nous sommes toujours dans le même paragraphe.
 Ceci ne doit pas être considère comme un nouveaux paragraphe[^1].
+
 Par contre ceci est bien un nouveau paragraphe. 😅
 Voici un lien vers la **homepage** du site [Je suis un lien souligné](https://www.malogermond.fr)
 
@@ -28,10 +29,13 @@ Voici un lien vers la **homepage** du site [Je suis un lien souligné](https://w
       - Bullet point
         - Bullet point
 
-1. Liste numérique
+1. Je change de type de liste numérique
    1. Liste numérique
+   2. Toujours une liste
+2. Et c'est une même liste
 
 **Emphasis**
+
 _underscores_
 
 | Tables        |      Are      |   Cool |

@@ -86,6 +86,10 @@ h6 {
   font-size: 1.2rem;
 }
 
+pre {
+  overflow: auto;
+}
+
 @media screen and (max-width: 640px) {
   h1 {
     font-size: 4em;
