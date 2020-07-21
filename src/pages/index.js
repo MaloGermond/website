@@ -18,8 +18,7 @@ const Home = () => (
             href=" https://privowny.io/"
             target="_blank"
             class="header-link"
-          />
-          <OutboundLink href=" https://privowny.io/" target="_blank">
+          >
             Privowny
           </OutboundLink>
           pour apporter un moyen plus simple de protéger les données des
