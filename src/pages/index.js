@@ -18,7 +18,7 @@ const Home = () => (
             href=" https://privowny.io/"
             target="_blank"
             class="header-link"
-          >
+          />
           <OutboundLink href=" https://privowny.io/" target="_blank">
             Privowny
           </OutboundLink>
@@ -32,7 +32,6 @@ const Home = () => (
             target="_blank"
             class="header-link"
           >
-          <OutboundLink href=" http://esadmm.fr/" target="_blank">
             Esadmm
           </OutboundLink>
           {"et l'"}
@@ -43,7 +42,7 @@ const Home = () => (
           >
             ensci
           </OutboundLink>
-          comme assistant d'enseignement en design.
+          {"comme assistant d'enseignement en design."}
         </h4>
       </article>
     </section>

@@ -24,7 +24,6 @@ export default function Manifest() {
   `)
   return (
     <Layout>
-      <Cartel frontmatter={data.markdownRemark} />
       {data.markdownRemark != null ? (
         <div
           className="blog-post-content"
