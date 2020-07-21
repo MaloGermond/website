@@ -35,10 +35,10 @@ function Cartel({ frontmatter }) {
           <Header>
             <Label align="end">Project:</Label>
             <h1>{frontmatter.title}</h1>
-            <Label>Date:</Label>
-            <p>{frontmatter.date}</p>
-            <Label>Description:</Label>
-            <p>{frontmatter.description}</p>
+            {frontmatter.date ? <Label>Date:</Label> : ""}
+            {frontmatter.date ? <p>{frontmatter.date}</p> : ""}
+            {frontmatter.description ? <Label>Description:</Label> : ""}
+            {frontmatter.description ? <p>{frontmatter.description}</p> : ""}
           </Header>
         }
       </div>

@@ -6,7 +6,11 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Manifest() {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: { title: { eq: "Manifest" } }) {
+      markdownRemark(
+        frontmatter: {
+          title: { eq: "Pour un regard nouveau sur l'ordinateur" }
+        }
+      ) {
         frontmatter {
           date
           description
@@ -20,11 +24,15 @@ export default function Manifest() {
   `)
   return (
     <Layout>
-      <Cartel frontmatter={data.markdownRemark.frontmatter} />
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-      />
+      <Cartel frontmatter={data.markdownRemark} />
+      {data.markdownRemark != null ? (
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
+      ) : (
+        "Humm this document looks empty 😶"
+      )}
     </Layout>
   )
 }
