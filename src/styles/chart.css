@@ -185,3 +185,35 @@ blockquote {
 .onSurface900 {
   color: var(--colors-surface-050);
 }
+
+/*=================================
+
+  animation
+
+=================================*/
+
+.left-skew {
+  animation-duration: 2s;
+  animation-name: left-skew;
+  animation-timing-function: ease-out;
+}
+
+@keyframes left-skew {
+  from {
+    opacity: 0;
+  }
+
+  74% {
+    opacity: 0;
+  }
+
+  75% {
+    transform: skew(-5deg) translateX(-80px);
+    opacity: 0.8;
+  }
+
+  to {
+    transform: skew(0deg) translateX(0px);
+    opacity: 1;
+  }
+}

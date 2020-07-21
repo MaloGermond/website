@@ -6,7 +6,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 const Home = () => (
   <Layout>
     <section>
-      <article>
+      <article class="left-skew">
         <h4>
           Je suis Malo, designer produit basé à Marseille. Spécialisé dans la
           conception d'interfaces, avec un intérêt pour les objets connectés et

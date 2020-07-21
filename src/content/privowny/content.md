@@ -6,8 +6,6 @@ L’application fournit aussi un ensemble de modules permettant à un utilisateu
 L’application est disponible en marque blanche, et chaque utilisateur peut sélectionné les fonctionnalités désirées.
 L’application est disponible sur IOS, AND et comme une extension pour Chrome, Edge et Firefox.
 Pour mettre en oeuvre cette solution, plusieurs produits ont été développés. Une Consumer Admin Console, un gestionnaire de compte Privowny, un Helpcenter, un site produit. L’ensemble de ces services peuvent être customisés et modularisés par le client."
-<<<<<<< HEAD
-banner: "banner.png"
 tag: "interface, application"
 ---
 
