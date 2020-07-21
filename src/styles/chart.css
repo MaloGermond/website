@@ -141,7 +141,7 @@ blockquote {
   --colors-primary-900: #ffe9ec;
 
   --colors-surface-050: #ffffff;
-  --colors-surface-100: #e5e6ea;
+  --colors-surface-100: #f2f2f2;
   --colors-surface-200: #cbced5;
   --colors-surface-300: #b0b5c0;
   --colors-surface-400: #969dab;
@@ -154,7 +154,9 @@ blockquote {
   --colors-onprimary: var(--colors-surface-900);
   --colors-onsecondary: var(--colors-surface-900);
 
-  --colors-background-light: var(--colors-surface-050);
+  --colors-background-light-low: var(--colors-surface-050);
+  --colors-background-light-medium: var(--colors-surface-100);
+  --colors-background-light-high: var(--colors-surface-200);
   --colors-background-dark: var(--colors-surface-900);
 
   --colors-ondark-low: var(--colors-surface-050);
