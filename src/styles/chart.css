@@ -3,7 +3,8 @@
   fonts
 
 =================================*/
-@import url("https://fonts.googleapis.com/css?family=Karla|Open+Sans");
+/* @import url("https://fonts.googleapis.com/css?family=Karla|Open+Sans"); */
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
 @font-face {
   font-family: "Roobert Bold";
@@ -28,7 +29,7 @@
 =================================*/
 
 a {
-  font-family: "Roobert Bold", sans-serif;
+  font-family: "Arvo", serif;
   color: var(--colors-onbackground--low);
   text-decoration-line: none;
   border-bottom: var(--colors-secondary);
@@ -44,11 +45,11 @@ a:hover {
 
 p {
   font-size: 1em;
-  max-width: 600px;
+  max-width: 510px;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   line-height: 1.6;
-  font-family: "Open sans", sans-serif;
+  font-family: "Arvo", serif;
 }
 
 h1,
@@ -137,18 +138,32 @@ blockquote {
   --colors-primary-900: #ffe9ec;
 
   --colors-surface-050: #ffffff;
-  --colors-surface-100: #fafafa;
-  --colors-surface-500: #7c828e;
-  --colors-surface-900: #10192d;
+  --colors-surface-100: #e5e6ea;
+  --colors-surface-200: #cbced5;
+  --colors-surface-300: #b0b5c0;
+  --colors-surface-400: #969dab;
+  --colors-surface-500: #7c8497;
+  --colors-surface-600: #626c82;
+  --colors-surface-700: #47536d;
+  --colors-surface-800: #2d3b58;
+  --colors-surface-900: #132243;
 
-  --colors-onprimary: var(--color-surface-900);
-  --colors-onsecondary: var(--color-surface-900);
+  --colors-onprimary: var(--colors-surface-900);
+  --colors-onsecondary: var(--colors-surface-900);
 
-  --colors-background-low: var(--color-surface-050);
-  --colors-background-high: var(--color-surface-900);
+  --colors-background-light: var(--colors-surface-050);
+  --colors-background-dark: var(--colors-surface-900);
 
-  --colors-onbackground-low: var(--color-surface-050);
-  --colors-onbackground-high: var(--color-surface-900);
+  --colors-ondark-low: var(--colors-surface-050);
+  --colors-onlight-low: var(--colors-surface-600);
+  --colors-onlight-medium: var(--colors-surface-600);
+  --colors-onlight-high: var(--colors-surface-900);
+
+  /*=================================
+
+    shadows
+
+  =================================*/
 
   --box-shadow-1: 0 1px 1px 0 rgba(34, 46, 60, 0.07),
     0 2px 1px -1px rgba(34, 46, 60, 0.12), 0 1px 3px 0 rgba(34, 46, 60, 0.2);
@@ -162,6 +177,15 @@ blockquote {
     0 1px 18px 0 rgba(34, 46, 60, 0.12), 0 3px 5px -1px rgba(34, 46, 60, 0.2);
   --box-shadow-8: 0 8px 10px 1px rgba(34, 46, 60, 0.07),
     0 3px 14px 2px rgba(34, 46, 60, 0.12), 0 5px 5px -3px rgba(34, 46, 60, 0.2);
+
+  /*=================================
+
+  screenSize
+
+=================================*/
+
+  --screen-narrow: 450px;
+  --screen-small: 650px;
 }
 
 /*=================================
@@ -174,18 +198,6 @@ blockquote {
   font-weight: bold;
 }
 
-.medium {
-  opacity: 0.8;
-}
-
-.low {
-  opacity: 0.6;
-}
-
-.onSurface900 {
-  color: var(--colors-surface-050);
-}
-
 /*=================================
 
   animation
@@ -193,7 +205,7 @@ blockquote {
 =================================*/
 
 .left-skew {
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-name: left-skew;
   animation-timing-function: ease-out;
 }
@@ -203,11 +215,11 @@ blockquote {
     opacity: 0;
   }
 
-  74% {
+  49% {
     opacity: 0;
   }
 
-  75% {
+  50% {
     transform: skew(-5deg) translateX(-80px);
     opacity: 0.8;
   }
