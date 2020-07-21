@@ -6,7 +6,11 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Manifest() {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: { title: { eq: "Manifest" } }) {
+      markdownRemark(
+        frontmatter: {
+          title: { eq: "Pour un regard nouveau sur l'ordinateur" }
+        }
+      ) {
         frontmatter {
           date
           description
