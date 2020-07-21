@@ -6,7 +6,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 const Home = () => (
   <Layout>
     <section>
-      <article>
+      <article class="left-skew">
         <h4>
           Je suis Malo, designer produit basé à Marseille. Spécialisé dans la
           conception d'interfaces, avec un intérêt pour les objets connectés et
@@ -14,6 +14,11 @@ const Home = () => (
         </h4>
         <h4>
           {"Je travaille actuellement chez"}
+          <OutboundLink
+            href=" https://privowny.io/"
+            target="_blank"
+            class="header-link"
+          >
           <OutboundLink href=" https://privowny.io/" target="_blank">
             Privowny
           </OutboundLink>
@@ -22,6 +27,11 @@ const Home = () => (
         </h4>
         <h4>
           {"Auparavant, j'ai travaillé à l'"}
+          <OutboundLink
+            href=" http://esadmm.fr/"
+            target="_blank"
+            class="header-link"
+          >
           <OutboundLink href=" http://esadmm.fr/" target="_blank">
             Esadmm
           </OutboundLink>
@@ -29,6 +39,7 @@ const Home = () => (
           <OutboundLink
             href=" https://www.ensci.com/ensci-les-ateliers/"
             target="_blank"
+            class="header-link"
           >
             ensci
           </OutboundLink>

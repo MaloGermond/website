@@ -9,11 +9,12 @@ article {
   box-sizing: border-box;
 }
 
-article a {
+.header-link {
   margin: 0 0.25rem;
+  font-family: "Roobert Bold", sans-serif;
 }
 @media screen and (max-width: 640px) {
-  article {
+  .header-link {
     padding: 0 0.25rem;
     margin: 1rem;
   }

@@ -9,7 +9,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Caption = styled.p`
   font-size: 0.8rem;
-  color: var(--colors-onbackground-low);
+  color: var(--colors-onlight-high);
   text-align: center;
 `
 
