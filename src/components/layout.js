@@ -7,7 +7,7 @@ const Site = styled.div`
   display: grid;
 `
 const Content = styled.article`
-  min-height: calc(100vh - 8.5rem);
+  min-height: calc(100vh - 6.3rem);
 `
 
 function Layout({ children, pathname }) {

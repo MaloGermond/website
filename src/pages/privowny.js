@@ -5,9 +5,18 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const Article = styled.article`
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  gap: 1rem;
+
   & p {
     max-width: none;
     padding: 2rem 0 2rem 0;
+    grid-column: 1/4;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `
 
