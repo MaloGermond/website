@@ -4,7 +4,12 @@ import Cartel from "../components/cartel.js"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-const Article = styled.article``
+const Article = styled.article`
+  & p {
+    max-width: none;
+    padding: 2rem 0 2rem 0;
+  }
+`
 
 export default function Project() {
   const data = useStaticQuery(graphql`

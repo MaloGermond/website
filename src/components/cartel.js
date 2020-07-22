@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 
-const Header = styled.header`
+const Header = styled.div`
   text-align: left;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -30,7 +30,7 @@ const Label = styled.p`
 function Cartel({ frontmatter }) {
   if (frontmatter != null) {
     return (
-      <div class="left-skew">
+      <header class="left-skew">
         {
           <Header>
             <Label align="end">Project:</Label>
@@ -41,7 +41,7 @@ function Cartel({ frontmatter }) {
             {frontmatter.description ? <p>{frontmatter.description}</p> : ""}
           </Header>
         }
-      </div>
+      </header>
     )
   } else {
     return <div>Humm I'm sorry, I'm not able to find data 🔍️</div>
