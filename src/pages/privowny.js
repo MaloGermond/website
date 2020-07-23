@@ -18,7 +18,6 @@ export default function Privowny() {
       }
     }
   `)
-  console.log(data.markdownRemark)
   return (
     <Layout>
       <Project content={data.markdownRemark}></Project>

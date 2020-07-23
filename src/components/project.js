@@ -12,7 +12,17 @@ const Article = styled.article`
   grid-template-columns: 0.2fr 1fr 0.2fr;
   gap: 1rem;
 
-  & p {
+  & p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: none;
+    grid-column: 2/3;
+  }
+  & table {
     max-width: none;
     padding: 2rem 0 2rem 0;
     grid-column: 1/4;
