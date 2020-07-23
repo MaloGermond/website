@@ -3,6 +3,7 @@ import Layout from "../components/layout.js"
 import "./index.css"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const Presentation = styled.article`
   margin-left: auto;
@@ -25,13 +26,9 @@ const Home = () => (
       </h4>
       <h4>
         {"Je travaille actuellement chez"}
-        <OutboundLink
-          href=" https://privowny.io/"
-          target="_blank"
-          class="header-link"
-        >
+        <Link to="privowny" target="_blank" class="header-link">
           Privowny
-        </OutboundLink>
+        </Link>
         pour apporter un moyen plus simple de protéger les données des
         utilisateurs.
       </h4>

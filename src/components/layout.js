@@ -5,6 +5,8 @@ import styled from "styled-components"
 
 const Site = styled.div`
   display: grid;
+  max-width: 1920px;
+  margin: auto;
 `
 const Content = styled.article`
   min-height: calc(100vh - 6.3rem);
