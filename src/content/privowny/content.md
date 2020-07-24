@@ -7,16 +7,21 @@ L’application est disponible en marque blanche, et chaque utilisateur peut sé
 L’application est disponible sur IOS, AND et comme une extension pour Chrome, Edge et Firefox.
 Pour mettre en oeuvre cette solution, plusieurs produits ont été développés. Une Consumer Admin Console, un gestionnaire de compte Privowny, un Helpcenter, un site produit. L’ensemble de ces services peuvent être customisés et modularisés par le client."
 tag: "interface, application"
+cover: "cover.png"
 ---
 
-![](./artboard.png)
+![](./crossPlatform.png)
 
-# Un produit en marque blanche
+![](./mobile.png)
 
-# Un Design System pour n'importe qu'elle marque
+![](./icone.png)
 
-Pour permettre la customisation du produit, nous avons mis en place un design system. Au delà de réduire le coût de l’implémentation et d’assurer une cohérence entre les différents fronts, notre design system permet d’assurer un niveau d’accessibilité AA.
+![](./designSystem.png)
 
-# Animation
+![](./colorsManifest.png)
 
-# Production d'illustration et automatisation
+![](./screenboard.png)
+
+![](./automationExport.png)
+
+![](./specification.png)
