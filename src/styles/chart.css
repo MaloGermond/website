@@ -234,3 +234,29 @@ blockquote {
     opacity: 1;
   }
 }
+
+.right-skew {
+  animation-duration: 1.5s;
+  animation-name: right-skew;
+  animation-timing-function: ease-out;
+}
+
+@keyframes right-skew {
+  from {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: skew(5deg) translateX(80px);
+    opacity: 0.8;
+  }
+
+  to {
+    transform: skew(0deg) translateX(0px);
+    opacity: 1;
+  }
+}

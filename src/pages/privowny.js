@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
 import Layout from "../components/layout.js"
 import Project from "../components/project.js"
 
@@ -13,6 +12,13 @@ export default function Privowny() {
           description
           tag
           title
+          cover {
+            childImageSharp {
+              fluid(maxHeight: 800, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         html
       }

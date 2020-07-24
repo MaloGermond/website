@@ -1,6 +1,5 @@
 import React from "react"
 import Cartel from "../components/cartel.js"
-
 import styled from "styled-components"
 
 const Section = styled.section`
@@ -11,6 +10,7 @@ const Article = styled.article`
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr;
   gap: 1rem;
+  padding-bottom: 2rem;
 
   & p,
   h1,
@@ -22,6 +22,15 @@ const Article = styled.article`
     max-width: none;
     grid-column: 2/3;
   }
+
+  & img {
+    border-radius: 4px;
+  }
+
+  & a {
+    border-style: none;
+  }
+
   & table {
     max-width: none;
     padding: 2rem 0 2rem 0;

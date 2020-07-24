@@ -3,6 +3,7 @@ title: "Codons la maille"
 date: "2016"
 description: "Codons la Maille est un périphérique nouveau accompagné d’une application permettant de porter un regard différent sur l’informatique en montrant le code de manière ludique et palpable. L’enjeu de ce périphérique est de permettre à l’utilisateur de manipuler le code et sa logique. Il se lit et s’écrit à travers le regard et la manipulation d’un outil ayant des ressemblances avec l’informatique, la machine à tricoter."
 tag: "diplôme,  interface"
+cover: "01.jpg"
 ---
 
 ![](04.jpg)
