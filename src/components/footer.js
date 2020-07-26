@@ -27,28 +27,28 @@ function Footer() {
         <OutboundLink
           href="https://github.com/MaloGermond?tab=repositories"
           target="_blank"
-          alt="github logo"
+          aria-label="github logo"
         >
           <Github />
         </OutboundLink>
         <OutboundLink
           href="https://www.linkedin.com/in/malogermond/"
           target="_blank"
-          alt="Linkedin logo"
+          aria-label="Linkedin logo"
         >
           <Linkedin />
         </OutboundLink>
         <OutboundLink
           href="https://twitter.com/MaloGermond"
           target="_blank"
-          alt="Twitter logo"
+          aria-label="Twitter logo"
         >
           <Twitter />
         </OutboundLink>
         <OutboundLink
           href="http://www.malogermond.net/"
           target="_blank"
-          alt="My old website logo"
+          aria-label="My old website logo"
         >
           <Oldwebsite />
         </OutboundLink>
