@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 
@@ -75,7 +74,15 @@ function Cartel({ frontmatter }) {
       </Header>
     )
   } else {
-    return <div>Humm I'm sorry, I'm not able to find data 🔍️</div>
+    return (
+      <div>
+        Humm I'm sorry, I'm not able to find data{" "}
+        <span role="img" aria-label="magnifying glass">
+          🔍
+        </span>
+        ️
+      </div>
+    )
   }
 }
 
