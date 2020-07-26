@@ -10,18 +10,18 @@ tag: "interface, application"
 cover: "cover.png"
 ---
 
-![](./crossPlatform.png)
+![Écrans de la page principale de l'application en train de fonctionner sur un ordinateur et sur un téléphone.](./crossPlatform.png)
 
-![](./mobile.png)
+![Écrans de l'application fonctionnant sur un téléphone.](./mobile.png)
 
-![](./icone.png)
+![Ensembles des icônes disponibles dans le  produit et mises en situation avec l'utilisation du wallpaper  du produit.](./icone.png)
 
-![](./designSystem.png)
+![Aperçus de différents éléments du design système.](./designSystem.png)
 
-![](./colorsManifest.png)
+![Ensembles des couleurs destinés à la création des styles du design système.](./colorsManifest.png)
 
-![](./screenboard.png)
+![Multiples écrans du produit](./screenboard.png)
 
-![](./automationExport.png)
+![Écrans d'illustration du produit utilisé dans le help center et généré automatiquement à partir de screenshot du produit.](./automationExport.png)
 
-![](./specification.png)
+![Détail d'une spécification du composant "input" du design système.](./specification.png)
