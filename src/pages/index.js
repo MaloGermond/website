@@ -6,14 +6,18 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const Presentation = styled.article`
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 2rem auto 2rem auto;
   max-width: 650px;
   padding-top: 2rem;
   padding-bottom: 2rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    margin: 1rem;
+  }
 `
 
 const Home = () => (
@@ -26,7 +30,7 @@ const Home = () => (
       </h4>
       <h4>
         {"Je travaille actuellement chez"}
-        <Link to="privowny" target="_blank" class="header-link">
+        <Link to="privowny" target="_blank" className="header-link">
           Privowny
         </Link>
         pour apporter un moyen plus simple de protéger les données des
@@ -37,7 +41,7 @@ const Home = () => (
         <OutboundLink
           href=" http://esadmm.fr/"
           target="_blank"
-          class="header-link"
+          className="header-link"
         >
           Esadmm
         </OutboundLink>
@@ -45,7 +49,7 @@ const Home = () => (
         <OutboundLink
           href=" https://www.ensci.com/ensci-les-ateliers/"
           target="_blank"
-          class="header-link"
+          className="header-link"
         >
           ensci
         </OutboundLink>
