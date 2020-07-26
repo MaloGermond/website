@@ -1,21 +1,9 @@
-article {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  max-width: 650px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
-}
-
 .header-link {
-  margin: 0 0.25rem;
+  margin: 0 0.5rem;
   font-family: "Roobert Bold", sans-serif;
 }
 @media screen and (max-width: 640px) {
   .header-link {
-    padding: 0 0.25rem;
-    margin: 1rem;
+    padding: 0;
   }
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout.js"
-import Cartel from "../components/cartel.js"
 import { useStaticQuery, graphql } from "gatsby"
 
 export default function Manifest() {
