@@ -36,7 +36,7 @@
 =================================*/
 
 a {
-  font-family: "Arvo", serif;
+  font-family: inherit;
   color: var(--colors-onbackground--low);
   text-decoration-line: none;
   border-bottom: var(--colors-secondary);

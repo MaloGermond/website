@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout.js"
-import "./index.css"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import styled from "styled-components"
 import { Link } from "gatsby"
@@ -29,10 +28,10 @@ const Home = () => (
         développement sur le web.
       </h4>
       <h4>
-        {"Je travaille actuellement chez"}
+        {"Je travaille actuellement chez "}
         <Link to="privowny" target="_blank" className="header-link">
           Privowny
-        </Link>
+        </Link>{" "}
         pour apporter un moyen plus simple de protéger les données des
         utilisateurs.
       </h4>
@@ -45,7 +44,7 @@ const Home = () => (
         >
           Esadmm
         </OutboundLink>
-        {"et l'"}
+        {" et l'"}
         <OutboundLink
           href=" https://www.ensci.com/ensci-les-ateliers/"
           target="_blank"
@@ -53,7 +52,7 @@ const Home = () => (
         >
           ensci
         </OutboundLink>
-        {"comme assistant d'enseignement en design."}
+        {" comme assistant d'enseignement en design."}
       </h4>
     </Presentation>
   </Layout>
