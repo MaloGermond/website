@@ -1,14 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import Layout from "../components/layout.js"
 
 const Error = styled.article`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 `
 
 function error() {
   return (
-    <section>
+    <Layout>
       <Error>
         <h3>
           Oups...{" "}
@@ -22,7 +27,7 @@ function error() {
         </p>
         <Link>Retour à la page principale.</Link>
       </Error>
-    </section>
+    </Layout>
   )
 }
 

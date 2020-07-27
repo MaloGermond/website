@@ -10,7 +10,6 @@ const Article = styled.article`
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr;
   gap: 1rem;
-  padding-bottom: 2rem;
 
   & p,
   h1,
