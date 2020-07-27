@@ -1,16 +1,22 @@
 import React from "react"
 import "./footer.css"
 import styled from "styled-components"
-import Twitter from "../../src/assets/Twitter.svg"
-import Github from "../../src/assets/Github.svg"
-import Linkedin from "../../src/assets/Linkedin.svg"
-import Oldwebsite from "../../src/assets/Oldwebsite.svg"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Caption = styled.p`
   font-size: 0.8rem;
   color: var(--colors-onlight-high);
   text-align: center;
+`
+
+const Icon = styled.i`
+  font-size: 32px;
+  color: var(--colors-onlight-low);
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--colors-onlight-height);
+  }
 `
 
 const Colophon = styled.div``
@@ -29,28 +35,28 @@ function Footer() {
           target="_blank"
           aria-label="github logo"
         >
-          <Github />
+          <Icon className="icon-github"></Icon>
         </OutboundLink>
         <OutboundLink
           href="https://www.linkedin.com/in/malogermond/"
           target="_blank"
           aria-label="Linkedin logo"
         >
-          <Linkedin />
+          <Icon className="icon-linkedin"></Icon>
         </OutboundLink>
         <OutboundLink
           href="https://twitter.com/MaloGermond"
           target="_blank"
           aria-label="Twitter logo"
         >
-          <Twitter />
+          <Icon className="icon-twitter"></Icon>
         </OutboundLink>
         <OutboundLink
           href="http://www.malogermond.net/"
           target="_blank"
           aria-label="My old website logo"
         >
-          <Oldwebsite />
+          <Icon className="icon-website"></Icon>
         </OutboundLink>
       </div>
     </footer>

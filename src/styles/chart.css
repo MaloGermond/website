@@ -13,6 +13,11 @@
   src: url("../fonts/RoobertBold.woff");
 }
 
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff");
+}
+
 /*=================================
 
   Generals

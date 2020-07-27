@@ -1,0 +1,48 @@
+i[class^="icon-"]:before,
+i[class*=" icon-"]:before {
+  font-family: icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross:before {
+  content: "\f101";
+}
+.icon-down:before {
+  content: "\f102";
+}
+.icon-external_link:before {
+  content: "\f103";
+}
+.icon-feedback:before {
+  content: "\f105";
+}
+.icon-github:before {
+  content: "\f106";
+}
+.icon-left:before {
+  content: "\f106";
+}
+.icon-linkedin:before {
+  content: "\f108";
+}
+.icon-question:before {
+  content: "\f108";
+}
+.icon-right:before {
+  content: "\f109";
+}
+.icon-twitter:before {
+  content: "\f10b";
+}
+.icon-up:before {
+  content: "\f10b";
+}
+.icon-website:before {
+  content: "\f10d";
+}
