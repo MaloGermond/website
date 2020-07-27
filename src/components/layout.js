@@ -5,12 +5,10 @@ import styled from "styled-components"
 
 const Site = styled.div`
   display: grid;
-  max-width: 1920px;
-  margin: auto;
+  min-height: 100vh;
+  grid-template-rows: 1fr;
 `
-const Content = styled.article`
-  min-height: calc(100vh - 6.3rem);
-`
+const Content = styled.article``
 
 function Layout({ children, pathname }) {
   return (

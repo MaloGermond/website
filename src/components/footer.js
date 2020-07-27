@@ -36,11 +36,11 @@ const Colophon = styled.div`
 
 const Container = styled.footer`
   background-color: var(--colors-background-light-medium);
+  margin-top: 4rem;
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
   box-sizing: border-box;
 `
 
