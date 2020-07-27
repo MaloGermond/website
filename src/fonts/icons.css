@@ -20,16 +20,16 @@ i[class*=" icon-"]:before {
   content: "\f103";
 }
 .icon-feedback:before {
-  content: "\f105";
+  content: "\f104";
 }
 .icon-github:before {
-  content: "\f106";
+  content: "\f105";
 }
 .icon-left:before {
   content: "\f106";
 }
 .icon-linkedin:before {
-  content: "\f108";
+  content: "\f107";
 }
 .icon-question:before {
   content: "\f108";
@@ -38,11 +38,11 @@ i[class*=" icon-"]:before {
   content: "\f109";
 }
 .icon-twitter:before {
-  content: "\f10b";
+  content: "\f10a";
 }
 .icon-up:before {
   content: "\f10b";
 }
 .icon-website:before {
-  content: "\f10d";
+  content: "\f10c";
 }

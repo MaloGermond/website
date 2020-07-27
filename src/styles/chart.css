@@ -15,7 +15,9 @@
 
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons.woff");
+  src: url("../fonts/icons.woff2") format("woff2"),
+    url("../fonts/icons.woff") format("woff"),
+    url("../fonts/icons.ttf") format("ttf");
 }
 
 /*=================================
