@@ -64,7 +64,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
   font-family: "Roobert Bold", sans-serif;
   margin-top: 1rem;
 }
@@ -136,16 +137,16 @@ blockquote {
   --colors-primary: #f98686;
   --colors-secondary: #2d2c31;
 
-  --colors-primary-050: #feebef;
-  --colors-primary-100: #fcced5;
-  --colors-primary-200: #f98686;
-  --colors-primary-300: #e1757a;
-  --colors-primary-400: #ec555a;
-  --colors-primary-500: #ffe9ec;
-  --colors-primary-600: #ffe9ec;
-  --colors-primary-700: #ffe9ec;
-  --colors-primary-800: #ffe9ec;
-  --colors-primary-900: #ffe9ec;
+  --colors-primary-050: #ffe5e4;
+  --colors-primary-100: #ffcccc;
+  --colors-primary-200: #ffaca8;
+  --colors-primary-300: #ff9494;
+  --colors-primary-400: #ff8585;
+  --colors-primary-500: #ff6c6c;
+  --colors-primary-600: #ff5555;
+  --colors-primary-700: #ff4444;
+  --colors-primary-800: #ff2828;
+  --colors-primary-900: #ff0808;
 
   --colors-surface-050: #ffffff;
   --colors-surface-100: #f2f2f2;
