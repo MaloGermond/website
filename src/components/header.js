@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import Button from "../components/button.js"
 
@@ -13,6 +13,16 @@ const Container = styled.header`
   background: var(--colors-background-light-low);
   width: 100%;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  transition: 1s;
+
+	&[data-active='true'] {
+		box-shadow: 0 4px 5px 0 rgba(34,46,60,0.07), 0 1px 10px 0 rgba(34,46,60,0.12), 0 2px 4px -1px rgba(34,46,60,0.20);
+
+  }
+
+  }
 `
 
 const List = styled.div`
@@ -22,8 +32,20 @@ const List = styled.div`
 `
 
 export default function Header({ homepage }) {
+  const [scrolled, setScrolled] = useState(false)
+
+  function handleScroll() {
+    if (window.scrollY > 10) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }
+
+  document.addEventListener("scroll", handleScroll, { passive: true })
+
   return (
-    <Container>
+    <Container data-active={scrolled}>
       {homepage ? (
         <Button
           to="/"

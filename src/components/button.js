@@ -6,8 +6,8 @@ const Contained = styled.button`
   border-radius: 8px;
   background: var(${props => props.backgroundColor || `--colors-primary-200`});
   border-style: none;
-  font-size: 1.5rem;
-  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  padding: 0.6rem 0.7rem;
   transition: 0.3s;
   cursor: pointer;
   display: flex;
@@ -31,7 +31,7 @@ const Contained = styled.button`
 `
 
 const Icon = styled.i`
-  height: 24px;
+  height: 1rem;
 `
 
 export default function Button({
