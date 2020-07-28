@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Button from "../components/button.js"
 
@@ -34,15 +34,21 @@ const List = styled.div`
 export default function Header({ homepage }) {
   const [scrolled, setScrolled] = useState(false)
 
-  function handleScroll() {
-    if (window.scrollY > 10) {
-      setScrolled(true)
-    } else {
-      setScrolled(false)
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 10) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
     }
-  }
 
-  document.addEventListener("scroll", handleScroll, { passive: true })
+    document.addEventListener("scroll", handleScroll, { passive: true })
+    return () => {
+      // clean up the event handler when the component unmounts
+      document.removeEventListener("scroll", handleScroll)
+    }
+  })
 
   return (
     <Container data-active={scrolled}>
