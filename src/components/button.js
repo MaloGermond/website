@@ -4,7 +4,7 @@ import { navigate } from "gatsby"
 
 const Contained = styled.button`
   border-radius: 8px;
-  background: var(--colors-primary-200);
+  background: var(${props => props.backgroundColor || `--colors-primary-200`});
   border-style: none;
   font-size: 1.5rem;
   padding: 0.9rem 1rem;
@@ -15,17 +15,18 @@ const Contained = styled.button`
   align-items: center;
   gap: 1rem;
   text-transform: uppercase;
+  margin: 0;
 
   & :hover {
-    background: var(--colors-primary-400);
+    background: var(${props => props.hoverColor || `--colors-primary-400`});
   }
 
   & :focus {
-    background: var(--colors-primary-400);
+    background: var(${props => props.focusColor || `--colors-primary-400`});
   }
 
   & :active {
-    background: var(--colors-primary-500);
+    background: ${props => props.activeColor || `--colors-primary-500`};
   }
 `
 
@@ -33,7 +34,17 @@ const Icon = styled.i`
   height: 24px;
 `
 
-export default function Button({ children, to, trailingIcon, leadingIcon }) {
+export default function Button({
+  children,
+  to,
+  trailingIcon,
+  leadingIcon,
+  background,
+  foreground,
+  hovered,
+  actived,
+  focused,
+}) {
   function handleClick(e) {
     e.preventDefault()
     if (to != null) {
@@ -42,7 +53,13 @@ export default function Button({ children, to, trailingIcon, leadingIcon }) {
   }
 
   return (
-    <Contained onClick={handleClick}>
+    <Contained
+      onClick={handleClick}
+      backgroundColor={background}
+      hoverColor={hovered}
+      activeColor={actived}
+      focusColor={focused}
+    >
       {" "}
       {trailingIcon != null ? (
         <Icon className={"icon-" + trailingIcon}></Icon>

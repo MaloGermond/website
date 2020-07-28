@@ -1,4 +1,5 @@
 import React from "react"
+import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import SEO from "../components/seo.js"
 import styled from "styled-components"
@@ -15,6 +16,7 @@ function Layout({ children, pathname }) {
     <div>
       <SEO pathname={pathname} />
       <Site>
+        {pathname !== "/" ? <Header /> : <Header homepage="true" />}
         <Content>{children}</Content>
         <Footer />
       </Site>

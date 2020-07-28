@@ -20,7 +20,7 @@ const Presentation = styled.article`
 `
 
 const Home = () => (
-  <Layout>
+  <Layout pathname="/">
     <Presentation className="left-skew">
       <h4>
         Je suis Malo, designer produit basé à Marseille. Spécialisé dans la
@@ -50,7 +50,7 @@ const Home = () => (
           target="_blank"
           className="header-link"
         >
-          ensci
+          Ensci
         </OutboundLink>
         {" comme assistant d'enseignement en design."}
       </h4>
