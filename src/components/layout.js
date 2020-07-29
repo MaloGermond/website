@@ -7,7 +7,7 @@ import styled from "styled-components"
 const Site = styled.div`
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto 1fr auto;
 `
 const Content = styled.article``
 
