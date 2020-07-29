@@ -17,6 +17,10 @@ const Container = styled.header`
   top: 0;
   transition: 1s;
 
+	@media (max-width: 768px) {
+  	padding: 1rem;
+  }
+
 	&[data-active='true'] {
 		box-shadow: 0 4px 5px 0 rgba(34,46,60,0.07), 0 1px 10px 0 rgba(34,46,60,0.12), 0 2px 4px -1px rgba(34,46,60,0.20);
 
@@ -33,6 +37,7 @@ const List = styled.div`
 
 export default function Header({ homepage }) {
   const [scrolled, setScrolled] = useState(false)
+  const [display, setDisplay] = useState(true)
 
   useEffect(() => {
     function handleScroll() {
@@ -43,10 +48,20 @@ export default function Header({ homepage }) {
       }
     }
 
+    function handleResize() {
+      if (window.screen.width < 768) {
+        setDisplay(false)
+      } else {
+        setDisplay(true)
+      }
+    }
+    handleResize()
     document.addEventListener("scroll", handleScroll, { passive: true })
+    window.addEventListener("resize", handleResize, { passive: true })
     return () => {
       // clean up the event handler when the component unmounts
       document.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("resize", handleResize)
     }
   })
 
@@ -71,19 +86,23 @@ export default function Header({ homepage }) {
           focused="--colors-surface-200"
           actived="--colors-surface-900"
         >
-          Page d'accueil
+          {display ? "Page d'accueil" : ""}
         </Button>
       )}
       <List>
-        <Button
-          to="/privowny"
-          background="--colors-surface-050"
-          hovered="--colors-surface-200"
-          focused="--colors-surface-200"
-          actived="--colors-surface-900"
-        >
-          Privowny App
-        </Button>
+        {display ? (
+          <Button
+            to="/privowny"
+            background="--colors-surface-050"
+            hovered="--colors-surface-200"
+            focused="--colors-surface-200"
+            actived="--colors-surface-900"
+          >
+            Privowny App
+          </Button>
+        ) : (
+          ""
+        )}
         <Button>Contact me</Button>
       </List>
     </Container>
