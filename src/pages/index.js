@@ -40,14 +40,16 @@ const Home = () => (
         <OutboundLink
           href=" http://esadmm.fr/"
           target="_blank"
+          rel="noopener"
           className="header-link"
         >
           Esadmm
         </OutboundLink>
         {" et l'"}
         <OutboundLink
-          href=" https://www.ensci.com/ensci-les-ateliers/"
+          href=" https://www.ensci.com/"
           target="_blank"
+          rel="noopener"
           className="header-link"
         >
           Ensci

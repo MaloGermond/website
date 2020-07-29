@@ -74,6 +74,7 @@ export default function Header({ homepage }) {
           hovered="--colors-surface-200"
           focused="--colors-surface-200"
           actived="--colors-surface-900"
+          ariaLabel="Open homepage"
         >
           Malo Germond
         </Button>
@@ -85,6 +86,7 @@ export default function Header({ homepage }) {
           hovered="--colors-surface-200"
           focused="--colors-surface-200"
           actived="--colors-surface-900"
+          ariaLabel="Open homepage"
         >
           {display ? "Page d'accueil" : ""}
         </Button>
@@ -97,13 +99,14 @@ export default function Header({ homepage }) {
             hovered="--colors-surface-200"
             focused="--colors-surface-200"
             actived="--colors-surface-900"
+            ariaLabel="Open Privowny App project"
           >
             Privowny App
           </Button>
         ) : (
           ""
         )}
-        <Button>Contact me</Button>
+        <Button aria-label="Send me an email">Contact me</Button>
       </List>
     </Container>
   )

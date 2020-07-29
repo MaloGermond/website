@@ -44,6 +44,7 @@ export default function Button({
   hovered,
   actived,
   focused,
+  ariaLabel,
 }) {
   function handleClick(e) {
     e.preventDefault()
@@ -59,6 +60,7 @@ export default function Button({
       hoverColor={hovered}
       activeColor={actived}
       focusColor={focused}
+      aria-label={ariaLabel}
     >
       {" "}
       {trailingIcon != null ? (
