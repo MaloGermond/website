@@ -42,6 +42,10 @@ const Container = styled.footer`
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
 `
 
 function Footer() {

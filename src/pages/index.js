@@ -7,8 +7,7 @@ import { Link } from "gatsby"
 const Presentation = styled.article`
   margin: 2rem auto 2rem auto;
   max-width: 650px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -16,6 +15,7 @@ const Presentation = styled.article`
 
   @media (max-width: 768px) {
     margin: 1rem;
+    padding: 0;
   }
 `
 
