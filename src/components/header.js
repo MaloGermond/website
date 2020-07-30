@@ -106,7 +106,12 @@ export default function Header({ homepage }) {
         ) : (
           ""
         )}
-        <Button aria-label="Send me an email">Contact me</Button>
+        <Button
+          aria-label="Send me an email"
+          mail={"mailto:malo.germond@gmail.com"}
+        >
+          Contact me
+        </Button>
       </List>
     </Container>
   )

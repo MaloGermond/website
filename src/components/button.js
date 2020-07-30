@@ -46,6 +46,7 @@ Button.defaultProps = {
 export default function Button({
   children,
   to,
+  action,
   trailingIcon,
   leadingIcon,
   ariaLabel,
@@ -55,6 +56,9 @@ export default function Button({
     e.preventDefault()
     if (to != null) {
       navigate(to)
+    }
+    if (action != null) {
+      window.open(action)
     }
   }
 
