@@ -9,6 +9,13 @@ const Error = styled.article`
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding: 2rem 0;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    margin: 1rem;
+    padding: 0;
+  }
 `
 
 function error() {

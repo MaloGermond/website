@@ -25,7 +25,7 @@ export default function Privowny() {
     }
   `)
   return (
-    <Layout>
+    <Layout pathname="/privowny">
       <Project content={data.markdownRemark}></Project>
     </Layout>
   )

@@ -7,8 +7,7 @@ import { Link } from "gatsby"
 const Presentation = styled.article`
   margin: 2rem auto 2rem auto;
   max-width: 650px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -16,11 +15,12 @@ const Presentation = styled.article`
 
   @media (max-width: 768px) {
     margin: 1rem;
+    padding: 0;
   }
 `
 
 const Home = () => (
-  <Layout>
+  <Layout pathname="/">
     <Presentation className="left-skew">
       <h4>
         Je suis Malo, designer produit basé à Marseille. Spécialisé dans la
@@ -40,17 +40,19 @@ const Home = () => (
         <OutboundLink
           href=" http://esadmm.fr/"
           target="_blank"
+          rel="noopener"
           className="header-link"
         >
           Esadmm
         </OutboundLink>
         {" et l'"}
         <OutboundLink
-          href=" https://www.ensci.com/ensci-les-ateliers/"
+          href=" https://www.ensci.com/"
           target="_blank"
+          rel="noopener"
           className="header-link"
         >
-          ensci
+          Ensci
         </OutboundLink>
         {" comme assistant d'enseignement en design."}
       </h4>

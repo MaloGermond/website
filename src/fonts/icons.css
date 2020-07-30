@@ -31,18 +31,21 @@ i[class*=" icon-"]:before {
 .icon-linkedin:before {
   content: "\f107";
 }
-.icon-question:before {
+.icon-menu:before {
   content: "\f108";
 }
-.icon-right:before {
+.icon-question:before {
   content: "\f109";
 }
-.icon-twitter:before {
+.icon-right:before {
   content: "\f10a";
 }
-.icon-up:before {
+.icon-twitter:before {
   content: "\f10b";
 }
-.icon-website:before {
+.icon-up:before {
   content: "\f10c";
+}
+.icon-website:before {
+  content: "\f10d";
 }

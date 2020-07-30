@@ -1,4 +1,5 @@
 import React from "react"
+import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import SEO from "../components/seo.js"
 import styled from "styled-components"
@@ -6,7 +7,7 @@ import styled from "styled-components"
 const Site = styled.div`
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto 1fr auto;
 `
 const Content = styled.article``
 
@@ -15,6 +16,7 @@ function Layout({ children, pathname }) {
     <div>
       <SEO pathname={pathname} />
       <Site>
+        {pathname !== "/" ? <Header /> : <Header homepage="true" />}
         <Content>{children}</Content>
         <Footer />
       </Site>
