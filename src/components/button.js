@@ -1,10 +1,10 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 import { navigate } from "gatsby"
 
 const Contained = styled.button`
   border-radius: 8px;
-  background: var(${props => props.backgroundColor || `--colors-primary-200`});
+  background: var(${props => props.theme.enabled});
   border-style: none;
   font-size: 1rem;
   padding: 0.6rem 0.7rem;
@@ -18,15 +18,15 @@ const Contained = styled.button`
   margin: 0;
 
   & :hover {
-    background: var(${props => props.hoverColor || `--colors-primary-400`});
+    background: var(${props => props.theme.hovered});
   }
 
   & :focus {
-    background: var(${props => props.focusColor || `--colors-primary-400`});
+    background: var(${props => props.theme.focused});
   }
 
   & :active {
-    background: ${props => props.activeColor || `--colors-primary-500`};
+    background: var(${props => props.theme.actived});
   }
 `
 
@@ -34,17 +34,22 @@ const Icon = styled.i`
   height: 1rem;
 `
 
+Button.defaultProps = {
+  style: {
+    enabled: "--colors-primary-200",
+    hovered: "--colors-primary-400",
+    focused: "--colors-primary-400",
+    actived: "--colors-primary-500",
+  },
+}
+
 export default function Button({
   children,
   to,
   trailingIcon,
   leadingIcon,
-  background,
-  foreground,
-  hovered,
-  actived,
-  focused,
   ariaLabel,
+  style,
 }) {
   function handleClick(e) {
     e.preventDefault()
@@ -54,26 +59,41 @@ export default function Button({
   }
 
   return (
-    <Contained
-      onClick={handleClick}
-      backgroundColor={background}
-      hoverColor={hovered}
-      activeColor={actived}
-      focusColor={focused}
-      aria-label={ariaLabel}
-    >
-      {" "}
-      {trailingIcon != null ? (
-        <Icon className={"icon-" + trailingIcon}></Icon>
-      ) : (
-        ""
-      )}{" "}
-      {children}
-      {leadingIcon != null ? (
-        <Icon className={"icon-" + leadingIcon}></Icon>
-      ) : (
-        ""
-      )}
-    </Contained>
+    <ThemeProvider theme={style}>
+      <Contained onClick={handleClick} aria-label={ariaLabel}>
+        {" "}
+        {trailingIcon != null ? (
+          <Icon className={"icon-" + trailingIcon}></Icon>
+        ) : (
+          ""
+        )}{" "}
+        {children}
+        {leadingIcon != null ? (
+          <Icon className={"icon-" + leadingIcon}></Icon>
+        ) : (
+          ""
+        )}
+      </Contained>
+    </ThemeProvider>
   )
 }
+
+/*
+
+
+if (type === "secondary") {
+  const style = {
+    enabled: "--colors-surface-050",
+    hovered: "--colors-surface-200",
+    focused: "--colors-surface-200",
+    actived: "--colors-surface-400",
+  }
+} else {
+  const style = {
+    enabled: "--colors-primary-200",
+    hovered: "--colors-primary-400",
+    focused: "--colors-primary-400",
+    actived: "--colors-primary-500",
+  }
+}
+*/

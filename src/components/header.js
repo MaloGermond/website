@@ -17,15 +17,13 @@ const Container = styled.header`
   top: 0;
   transition: 1s;
 
-	@media (max-width: 768px) {
-  	padding: 1rem;
+  @media (max-width: 768px) {
+    padding: 1rem;
   }
 
-	&[data-active='true'] {
-		box-shadow: 0 4px 5px 0 rgba(34,46,60,0.07), 0 1px 10px 0 rgba(34,46,60,0.12), 0 2px 4px -1px rgba(34,46,60,0.20);
-
-  }
-
+  &[data-active="true"] {
+    box-shadow: 0 4px 5px 0 rgba(34, 46, 60, 0.07),
+      0 1px 10px 0 rgba(34, 46, 60, 0.12), 0 2px 4px -1px rgba(34, 46, 60, 0.2);
   }
 `
 
@@ -38,6 +36,21 @@ const List = styled.div`
 export default function Header({ homepage }) {
   const [scrolled, setScrolled] = useState(false)
   const [display, setDisplay] = useState(true)
+
+  const theme = {
+    primary: {
+      enabled: "--colors-primary-200",
+      hovered: "--colors-primary-400",
+      focused: "--colors-primary-400",
+      actived: "--colors-primary-500",
+    },
+    secondary: {
+      enabled: "--colors-surface-050",
+      hovered: "--colors-surface-200",
+      focused: "--colors-surface-200",
+      actived: "--colors-surface-400",
+    },
+  }
 
   useEffect(() => {
     function handleScroll() {
@@ -68,25 +81,15 @@ export default function Header({ homepage }) {
   return (
     <Container data-active={scrolled}>
       {homepage ? (
-        <Button
-          to="/"
-          background="--colors-surface-050"
-          hovered="--colors-surface-200"
-          focused="--colors-surface-200"
-          actived="--colors-surface-900"
-          ariaLabel="Open homepage"
-        >
+        <Button to="/" style={theme.secondary} ariaLabel="Open homepage">
           Malo Germond
         </Button>
       ) : (
         <Button
           to="/"
           trailingIcon="left"
-          background="--colors-surface-050"
-          hovered="--colors-surface-200"
-          focused="--colors-surface-200"
-          actived="--colors-surface-900"
           ariaLabel="Open homepage"
+          style={theme.secondary}
         >
           {display ? "Page d'accueil" : ""}
         </Button>
@@ -95,11 +98,8 @@ export default function Header({ homepage }) {
         {display ? (
           <Button
             to="/privowny"
-            background="--colors-surface-050"
-            hovered="--colors-surface-200"
-            focused="--colors-surface-200"
-            actived="--colors-surface-900"
             ariaLabel="Open Privowny App project"
+            style={theme.secondary}
           >
             Privowny App
           </Button>
