@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Button from "../components/button.js"
+import Input from "../components/input.js"
 
 const Sandbox = styled.div`
   width: 100vw;
@@ -14,26 +15,29 @@ const Sandbox = styled.div`
   box-sizing: border-box;
 `
 
-const List = styled.div`
+const List = styled.form`
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
+  width: 512px;
 `
 
 export default function Playground() {
   return (
     <Sandbox>
       <List>
-        <Button trailingIcon="question"></Button>
-        <Button>Contact me</Button>
-        <Button trailingIcon="right">Malo Germond</Button>
-        <Button to="/" trailingIcon="right" leadingIcon="down">
-          Choose an option
-        </Button>
-        <Button leadingIcon="down">Wich data</Button>
+        <Input label="Email" placeholder="me@address.com" type="email"></Input>
+        <Button>Envoyer</Button>
       </List>
     </Sandbox>
   )
+}
+
+const Wrapper = styled.Label``
+
+function TextArea() {
+  return <Wrapper></Wrapper>
 }

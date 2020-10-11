@@ -50,7 +50,9 @@ a:hover {
   border-bottom-style: solid;
 }
 
-p {
+p,
+label,
+input {
   font-size: 1em;
   max-width: 510px;
   padding-top: 0.25rem;
