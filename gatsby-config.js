@@ -77,6 +77,12 @@ module.exports = {
         trackingId: "UA-82648652-1",
       },
     },
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `malogermond.fr`,
+      },
+    },
   ],
 }
 
