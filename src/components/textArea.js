@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 
-const Field = styled.input`
+const Field = styled.textarea`
   background-color: var(--colors-background-light-medium);
   border-radius: 4px;
   border-style: none;
   padding: 0.5rem 1rem;
+  resize: none;
+  min-height: 16rem;
 `
 
 const Label = styled.p`
@@ -16,12 +18,11 @@ const Wrapper = styled.label`
   display: flex;
   flex-direction: column;
 `
-
-export default function Input(props) {
+export default function TextArea(props) {
   return (
     <Wrapper>
       <Label>{props.label}</Label>
-      <Field type={props.type} placeholder={props.placeholder}></Field>
+      <Field placeholder={props.placeholder}></Field>
     </Wrapper>
   )
 }

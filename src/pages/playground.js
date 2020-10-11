@@ -2,11 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import Button from "../components/button.js"
 import Input from "../components/input.js"
+import TextArea from "../components/textArea.js"
 
 const Sandbox = styled.div`
   width: 100vw;
   height: 100vh;
-  background: var(--colors-surface-100);
+  background: var(--colors-surface-050);
   display: flex;
 
   align-items: center;
@@ -30,14 +31,12 @@ export default function Playground() {
     <Sandbox>
       <List>
         <Input label="Email" placeholder="me@address.com" type="email"></Input>
+        <TextArea
+          label="Message"
+          placeholder="Écrivez ici votre message ici."
+        ></TextArea>
         <Button>Envoyer</Button>
       </List>
     </Sandbox>
   )
-}
-
-const Wrapper = styled.Label``
-
-function TextArea() {
-  return <Wrapper></Wrapper>
 }

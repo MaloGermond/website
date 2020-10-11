@@ -52,7 +52,8 @@ a:hover {
 
 p,
 label,
-input {
+input,
+textarea {
   font-size: 1em;
   max-width: 510px;
   padding-top: 0.25rem;
