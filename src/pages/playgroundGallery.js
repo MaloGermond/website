@@ -14,22 +14,10 @@ const Sandbox = styled.div`
   box-sizing: border-box;
 `
 
-const List = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: stretch;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 512px;
-`
-
 export default function Playground() {
   return (
     <Sandbox>
-      <List>
-        <Gallery></Gallery>
-      </List>
+      <Gallery></Gallery>
     </Sandbox>
   )
 }

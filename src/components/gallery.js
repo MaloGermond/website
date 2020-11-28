@@ -12,11 +12,21 @@ const Container = styled.section`
   justify-content: left;
   box-sizing: border-box;
   gap: 1rem;
+  overflow: scroll;
+ `
 
-  img {
+const Cover = styled.article`
+  min-width: 256px;
+
+  .gatsby-image-wrapper {
+    transition: 0.4s;
     border-radius: 4px;
   }
- `
+
+  a:hover .gatsby-image-wrapper {
+    box-shadow: var(--box-shadow-4);
+  }
+`
 
 function Gallery() {
   const data = useStaticQuery(graphql`
@@ -44,16 +54,16 @@ function Gallery() {
   return (
     <Container>
       {data.allMarkdownRemark.nodes.map(project => (
-        <div>
+        <Cover>
           <Link
             to={project.frontmatter.link}
             target="_blank"
             className="header-link"
           >
             <Img fluid={project.frontmatter.cover.childImageSharp.fluid} />
-            <h6>{project.frontmatter.title}</h6>
+            <h5>{project.frontmatter.title}</h5>
           </Link>
-        </div>
+        </Cover>
       ))}
     </Container>
   )
