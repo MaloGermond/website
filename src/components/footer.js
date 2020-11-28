@@ -88,13 +88,6 @@ function Footer() {
         >
           <Icon className="icon-twitter"></Icon>
         </OutboundLink>
-        <OutboundLink
-          href="http://www.malogermond.net/"
-          target="_blank"
-          aria-label="My old website logo"
-        >
-          <Icon className="icon-website"></Icon>
-        </OutboundLink>
       </SocialNetwork>
     </Container>
   )
