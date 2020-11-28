@@ -25,7 +25,7 @@ export default function Privowny() {
     }
   `)
   return (
-    <Layout pathname="/CodonsLaMaille">
+    <Layout pathname="/Codons-la-maille">
       <Project content={data.markdownRemark}></Project>
     </Layout>
   )
