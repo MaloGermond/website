@@ -10,6 +10,7 @@ const Article = styled.article`
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr;
   gap: 1rem;
+  margin: 2rem;
 
   & p,
   h1,
@@ -38,6 +39,7 @@ const Article = styled.article`
 
   @media (max-width: 768px) {
     display: block;
+    margin: 1rem;
   }
 `
 

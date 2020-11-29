@@ -23,8 +23,6 @@ cover: "cover.png"
 
 ![Ensembles des couleurs destinés à la création des styles du design système.](./colorsManifest.png)
 
-![Multiples écrans du produit](./screenboard.png)
-
 ![Écrans d'illustration du produit utilisé dans le help center et généré automatiquement à partir de screenshot du produit.](./automationExport.png)
 
 ![Détail d'une spécification du composant "input" du design système.](./specification.png)

@@ -8,7 +8,7 @@ const Container = styled.section`
   margin-top: 4rem;
   padding: 2rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   box-sizing: border-box;
   gap: 1rem;
@@ -16,6 +16,7 @@ const Container = styled.section`
 
   @media (max-width: 768px) {
     padding: 1rem;
+    justify-content: left;
   }
  `
 
@@ -34,7 +35,8 @@ const Cover = styled.article`
   }
 
   @media (max-width: 768px) {
-    width: 128px;
+    width: 160px;
+    flex-shrink: 0;
   }
 `
 
