@@ -1,6 +1,22 @@
 import React from "react"
 import styled from "styled-components"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
+import Button from "../components/button.js"
+
+const theme = {
+  primary: {
+    enabled: "--colors-primary-200",
+    hovered: "--colors-primary-400",
+    focused: "--colors-primary-400",
+    actived: "--colors-primary-500",
+  },
+  secondary: {
+    enabled: "--colors-surface-050",
+    hovered: "--colors-surface-200",
+    focused: "--colors-surface-200",
+    actived: "--colors-surface-400",
+  },
+}
 
 const Caption = styled.p`
   font-size: 0.8rem;
@@ -47,6 +63,11 @@ const Container = styled.footer`
     margin-top: 2rem;
   }
 `
+const FullWidth = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`
 
 function Footer() {
   return (
@@ -66,6 +87,7 @@ function Footer() {
           </span>{" "}
         </Caption>
       </Colophon>
+
       <SocialNetwork>
         <OutboundLink
           href="https://github.com/MaloGermond?tab=repositories"
@@ -89,6 +111,15 @@ function Footer() {
           <Icon className="icon-twitter"></Icon>
         </OutboundLink>
       </SocialNetwork>
+      <FullWidth>
+        <Button
+          action="mailto:malo.germond@gmail.com"
+          ariaLabel="Me contacter"
+          style={theme.secondary}
+        >
+          Me contacter
+        </Button>
+      </FullWidth>
     </Container>
   )
 }
