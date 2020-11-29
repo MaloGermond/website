@@ -3,6 +3,7 @@ import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import SEO from "../components/seo.js"
 import styled from "styled-components"
+import Gallery from "../components/gallery.js"
 
 const Site = styled.div`
   display: grid;
@@ -18,6 +19,7 @@ function Layout({ children, pathname }) {
       <Site>
         {pathname !== "/" ? <Header /> : <Header homepage="true" />}
         <Content>{children}</Content>
+        <Gallery />
         <Footer />
       </Site>
     </div>

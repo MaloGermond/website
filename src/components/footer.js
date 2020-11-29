@@ -1,6 +1,22 @@
 import React from "react"
 import styled from "styled-components"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
+import Button from "../components/button.js"
+
+const theme = {
+  primary: {
+    enabled: "--colors-primary-200",
+    hovered: "--colors-primary-400",
+    focused: "--colors-primary-400",
+    actived: "--colors-primary-500",
+  },
+  secondary: {
+    enabled: "--colors-surface-050",
+    hovered: "--colors-surface-200",
+    focused: "--colors-surface-200",
+    actived: "--colors-surface-400",
+  },
+}
 
 const Caption = styled.p`
   font-size: 0.8rem;
@@ -35,7 +51,7 @@ const Colophon = styled.div`
 `
 
 const Container = styled.footer`
-  background-color: var(--colors-background-light-medium);
+  background-color: var(--colors-background-light-light);
   margin-top: 4rem;
   padding: 2rem;
   display: flex;
@@ -46,6 +62,11 @@ const Container = styled.footer`
   @media (max-width: 768px) {
     margin-top: 2rem;
   }
+`
+const FullWidth = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `
 
 function Footer() {
@@ -66,6 +87,7 @@ function Footer() {
           </span>{" "}
         </Caption>
       </Colophon>
+
       <SocialNetwork>
         <OutboundLink
           href="https://github.com/MaloGermond?tab=repositories"
@@ -88,14 +110,16 @@ function Footer() {
         >
           <Icon className="icon-twitter"></Icon>
         </OutboundLink>
-        <OutboundLink
-          href="http://www.malogermond.net/"
-          target="_blank"
-          aria-label="My old website logo"
-        >
-          <Icon className="icon-website"></Icon>
-        </OutboundLink>
       </SocialNetwork>
+      <FullWidth>
+        <Button
+          action="mailto:malo.germond@gmail.com"
+          ariaLabel="Me contacter"
+          style={theme.secondary}
+        >
+          Me contacter
+        </Button>
+      </FullWidth>
     </Container>
   )
 }

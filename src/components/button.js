@@ -36,10 +36,10 @@ const Icon = styled.i`
 
 Button.defaultProps = {
   style: {
-    enabled: "--colors-primary-200",
-    hovered: "--colors-primary-400",
-    focused: "--colors-primary-400",
-    actived: "--colors-primary-500",
+    enabled: "--colors-primary-400",
+    hovered: "--colors-primary-500",
+    focused: "--colors-primary-500",
+    actived: "--colors-primary-700",
   },
 }
 

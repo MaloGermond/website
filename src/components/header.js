@@ -96,22 +96,32 @@ export default function Header({ homepage }) {
       )}
       <List>
         {display ? (
-          <Button
-            to="/privowny"
-            ariaLabel="Open Privowny App project"
-            style={theme.secondary}
-          >
-            Privowny App
-          </Button>
+          <List>
+            <Button
+              to="/privowny"
+              ariaLabel="Open Privowny App project"
+              style={theme.secondary}
+            >
+              Privowny App
+            </Button>
+            <Button
+              to="/label-fukushima"
+              ariaLabel="Open Label fukushima project"
+              style={theme.secondary}
+            >
+              Label Fukushima
+            </Button>
+            <Button
+              to="/codons-la-maille"
+              ariaLabel="Open Codons la maille project"
+              style={theme.secondary}
+            >
+              Codons la maille
+            </Button>
+          </List>
         ) : (
           ""
         )}
-        <Button
-          aria-label="Send me an email"
-          mail={"mailto:malo.germond@gmail.com"}
-        >
-          Contact me
-        </Button>
       </List>
     </Container>
   )
