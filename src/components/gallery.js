@@ -23,11 +23,17 @@ const Container = styled.section`
 const Cover = styled.article`
   width: 256px;
   order: ${props => props.order};
+
   div {
     border-radius: 4px;
   }
   a .gatsby-image-wrapper {
     transition: 0.4s;
+    transition-timing-function: ease-in-out;
+  }
+
+  a:hover div {
+    transform: scale(1.02);
   }
 
   a:hover .gatsby-image-wrapper {

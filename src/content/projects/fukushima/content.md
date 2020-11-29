@@ -11,18 +11,13 @@ tag: "objet, numérique"
 cover: "cover.jpg"
 ---
 
-![](01.jpg)
+![](trois flacons.jpg)
 
-![](02.jpg)
+![](pillulier ensemble.jpg)
 
-![](03.jpg)
+![](flacon proche.jpg)
 
-![](04.jpg)
-
-![](05.jpg)
-
-![](06.jpg)
-
-![](07.jpg)
-
-![](08.jpg)
+|                   |                   |
+| ----------------- | :---------------: |
+| ![](milan 01.jpg) | ![](milan 03.jpg) |
+| ![](milan 02.jpg) | ![](milan 04.jpg) |
