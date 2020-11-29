@@ -35,7 +35,7 @@ const Colophon = styled.div`
 `
 
 const Container = styled.footer`
-  background-color: var(--colors-background-light-medium);
+  background-color: var(--colors-background-light-light);
   margin-top: 4rem;
   padding: 2rem;
   display: flex;
