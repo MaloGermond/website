@@ -31,6 +31,16 @@ module.exports = {
         icon: `src/assets/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+        once: true, // Defines if animation needs to be launched once
+        selector: "[data-sal]", // Selector of the elements to be animated
+        enterEventName: "sal:in", // Enter event name
+        exitEventName: "sal:out", // Exit event name
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       // use to load svg
@@ -63,6 +73,7 @@ module.exports = {
         gfm: true,
         // Plugins configs
         plugins: [
+          "gatsby-remark-attr",
           {
             resolve: `gatsby-remark-images`,
             options: { maxWidth: 1920, linkImagesToOriginal: false },

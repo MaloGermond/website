@@ -17,7 +17,4 @@ cover: "cover.jpg"
 
 ![](flacon proche.jpg)
 
-|                   |                   |
-| ----------------- | :---------------: |
-| ![](milan 01.jpg) | ![](milan 03.jpg) |
-| ![](milan 02.jpg) | ![](milan 04.jpg) |
+_![](milan 01.jpg) ![](milan 03.jpg) ![](milan 02.jpg) ![](milan 04.jpg)_{class="gallery col-2"}

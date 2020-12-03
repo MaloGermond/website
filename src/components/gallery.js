@@ -5,24 +5,24 @@ import Img from "gatsby-image"
 
 const Container = styled.section`
   background-color: var(--colors-background-light-light);
-  margin-top: 4rem;
   padding: 2rem;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
   gap: 1rem;
-  overflow: scroll;
 
   @media (max-width: 768px) {
     padding: 1rem;
     justify-content: left;
+    flex-wrap: wrap;
   }
  `
 
 const Cover = styled.article`
   width: 256px;
   order: ${props => props.order};
+  flex-shrink: 0;
 
   div {
     border-radius: 4px;
@@ -41,8 +41,18 @@ const Cover = styled.article`
   }
 
   @media (max-width: 768px) {
-    width: 160px;
-    flex-shrink: 0;
+    width: 100%;
+
+    a {
+      display: flex;
+      border-bottom: none;
+      align-items: end;
+    }
+
+    a .gatsby-image-wrapper {
+      width: 8rem;
+      margin-right: 1rem;
+    }
   }
 `
 
@@ -70,8 +80,14 @@ function Gallery() {
   console.log({ data })
   return (
     <Container>
-      {data.allMarkdownRemark.nodes.map(project => (
-        <Cover order={project.frontmatter.order}>
+      {data.allMarkdownRemark.nodes.map((project, id) => (
+        <Cover
+          order={project.frontmatter.order}
+          data-sal="fade"
+          data-sal-duration="1000"
+          data-sal-delay={String(200 * project.frontmatter.order)}
+          data-sal-easing="ease-in-out"
+        >
           <Link
             to={project.frontmatter.link}
             target="_blank"
