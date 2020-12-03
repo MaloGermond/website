@@ -12,7 +12,28 @@ const Article = styled.article`
   gap: 1rem;
   margin: 2rem;
 
-  & p,
+  .full-width {
+    grid-column: 1/4;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .col-2 span {
+    width: calc(50% - 1rem);
+    height: 100%;
+  }
+
+  .col-3 span {
+    width: calc(33% - 1rem);
+    height: 100%;
+  }
+
+  p,
   h1,
   h2,
   h3,
@@ -40,6 +61,10 @@ const Article = styled.article`
   @media (max-width: 768px) {
     display: block;
     margin: 1rem;
+
+    .gallery span {
+      width: 100%;
+    }
   }
 `
 
