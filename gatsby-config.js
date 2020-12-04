@@ -73,6 +73,7 @@ module.exports = {
         gfm: true,
         // Plugins configs
         plugins: [
+          "gatsby-remark-unwrap-images",
           "gatsby-remark-attr",
           {
             resolve: `gatsby-remark-images`,

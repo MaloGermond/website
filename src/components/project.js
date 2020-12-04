@@ -16,6 +16,11 @@ const Article = styled.article`
     grid-column: 1/4;
   }
 
+  .gatsby-resp-image-wrapper {
+    width: 100%;
+    grid-column: 2/3;
+  }
+
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +45,7 @@ const Article = styled.article`
   h4,
   h5,
   h6 {
-    max-width: none;
+    max-width: 600px;
     grid-column: 2/3;
   }
 
