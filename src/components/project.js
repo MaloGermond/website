@@ -54,10 +54,6 @@ const Article = styled.article`
     border-radius: 4px;
   }
 
-  & a {
-    border-style: none;
-  }
-
   & table {
     max-width: none;
     padding: 2rem 0 2rem 0;
