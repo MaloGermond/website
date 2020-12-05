@@ -14,6 +14,7 @@ const Article = styled.article`
 
   .full-width {
     grid-column: 1/4;
+    width: 100%;
   }
 
   .gatsby-resp-image-wrapper {
@@ -73,15 +74,16 @@ const Article = styled.article`
   }
 `
 
-export default function Project(content) {
-  content = content.content
+export default function Project(props) {
   return (
     <Section>
-      <Cartel frontmatter={content.frontmatter} />
-      {content != null ? (
+      {props.cartel != null ? null : (
+        <Cartel frontmatter={props.content.frontmatter} />
+      )}
+      {props.content != null ? (
         <Article
           className="project"
-          dangerouslySetInnerHTML={{ __html: content.html }}
+          dangerouslySetInnerHTML={{ __html: props.content.html }}
         />
       ) : (
         "Humm this document looks empty 😶"

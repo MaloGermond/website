@@ -11,7 +11,7 @@ cover: "01.jpg"
 
 ![](04.jpg)
 
-![](02.jpg){class="full-width"}
+![](02.jpg){.full-width}
 
 ## Le dispositif
 

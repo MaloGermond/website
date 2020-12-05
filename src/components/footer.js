@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Button from "../components/button.js"
+import { Link } from "gatsby"
 
 const theme = {
   primary: {
@@ -36,7 +37,6 @@ const Icon = styled.i`
 
 const SocialNetwork = styled.div`
   display: flex;
-  padding: 1rem;
   gap: 0.5rem;
 
   & a {
@@ -44,10 +44,17 @@ const SocialNetwork = styled.div`
   }
 `
 
-const Colophon = styled.div`
+const FullWidth = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
+const OneLine = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 `
 
 const Container = styled.footer`
@@ -58,21 +65,16 @@ const Container = styled.footer`
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
-
+  gap: 1rem;
   @media (max-width: 768px) {
     margin-top: 2rem;
   }
-`
-const FullWidth = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
 `
 
 function Footer() {
   return (
     <Container>
-      <Colophon>
+      <FullWidth>
         <Caption>
           Copyright © 2016 - 2020 - All Rights Reserved - Marseille{" "}
         </Caption>
@@ -86,32 +88,32 @@ function Footer() {
             🚀
           </span>{" "}
         </Caption>
-      </Colophon>
+      </FullWidth>
 
-      <SocialNetwork>
-        <OutboundLink
-          href="https://github.com/MaloGermond?tab=repositories"
-          target="_blank"
-          aria-label="github logo"
-        >
-          <Icon className="icon-github"></Icon>
-        </OutboundLink>
-        <OutboundLink
-          href="https://www.linkedin.com/in/malogermond/"
-          target="_blank"
-          aria-label="Linkedin logo"
-        >
-          <Icon className="icon-linkedin"></Icon>
-        </OutboundLink>
-        <OutboundLink
-          href="https://twitter.com/MaloGermond"
-          target="_blank"
-          aria-label="Twitter logo"
-        >
-          <Icon className="icon-twitter"></Icon>
-        </OutboundLink>
-      </SocialNetwork>
-      <FullWidth>
+      <OneLine>
+        <SocialNetwork>
+          <OutboundLink
+            href="https://github.com/MaloGermond?tab=repositories"
+            target="_blank"
+            aria-label="github logo"
+          >
+            <Icon className="icon-github"></Icon>
+          </OutboundLink>
+          <OutboundLink
+            href="https://www.linkedin.com/in/malogermond/"
+            target="_blank"
+            aria-label="Linkedin logo"
+          >
+            <Icon className="icon-linkedin"></Icon>
+          </OutboundLink>
+          <OutboundLink
+            href="https://twitter.com/MaloGermond"
+            target="_blank"
+            aria-label="Twitter logo"
+          >
+            <Icon className="icon-twitter"></Icon>
+          </OutboundLink>
+        </SocialNetwork>
         <Button
           action="mailto:malo.germond@gmail.com"
           ariaLabel="Me contacter"
@@ -119,6 +121,11 @@ function Footer() {
         >
           Me contacter
         </Button>
+      </OneLine>
+      <FullWidth>
+        <Caption>
+          <Link to="/legal-mention">Mentions legal</Link>
+        </Caption>
       </FullWidth>
     </Container>
   )
