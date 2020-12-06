@@ -52,6 +52,7 @@ const Article = styled.article`
   h4,
   h5,
   h6,
+  ul,
   blockquote {
     max-width: 600px;
     grid-column: 2/3;
