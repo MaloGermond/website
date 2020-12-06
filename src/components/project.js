@@ -13,7 +13,7 @@ const Article = styled.article`
   margin: 2rem;
 
   .fullWidth {
-    grid-column: 1/4 !important;
+    grid-column: 1/4;
     width: 100%;
   }
 
@@ -23,11 +23,14 @@ const Article = styled.article`
   }
 
   .galleryCol2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 1rem;
+    grid-column: 1/4;
 
+    .custom-block-body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
     span {
       width: calc(50% - 1rem);
       height: 100%;
@@ -35,10 +38,14 @@ const Article = styled.article`
   }
 
   .galleryCol3 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 1rem;
+    grid-column: 1/4;
+
+    .custom-block-body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
     span {
       width: calc(33% - 1rem);
       height: 100%;
@@ -76,7 +83,11 @@ const Article = styled.article`
     display: block;
     margin: 1rem;
 
-    .gallery span {
+    .galleryCol3 span {
+      width: 100%;
+    }
+
+    .galleryCol2 span {
       width: 100%;
     }
   }

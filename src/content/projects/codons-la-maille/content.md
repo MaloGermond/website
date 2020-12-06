@@ -26,8 +26,15 @@ Dans un programme, les données d’un ordinateur sont comme les mailles d’un 
 
 Édition accompagnant l'interface qui liste les différents éléments et explique leurs fonctionnements.
 
-[[fullWidth]]
-|[[galleryCol3]]
-||_![](12.jpg) ![](13.jpg) ![](14.jpg) ![](15.jpg) ![](17.jpg) ![](18.jpg)_
+[[galleryCol3]]
+|![](12.jpg)
+|![](13.jpg)
+|![](14.jpg)
+|![](15.jpg)
+|![](17.jpg)
+|![](18.jpg)
 
-_![](ddays02.jpg) ![](ddays01.jpg) ![](ddays03.jpg)_{class="gallery col-3"}
+[[galleryCol3]]
+|![](ddays02.jpg)
+|![](ddays01.jpg)
+|![](ddays03.jpg)

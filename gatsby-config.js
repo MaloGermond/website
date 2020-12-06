@@ -87,7 +87,7 @@ module.exports = {
                   classes: "fullWidth",
                 },
                 galleryCol3: {
-                  classes: "galleryCol2",
+                  classes: "galleryCol3",
                 },
                 galleryCol2: {
                   classes: "galleryCol2",
