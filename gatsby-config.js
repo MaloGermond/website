@@ -74,7 +74,6 @@ module.exports = {
         // Plugins configs
         plugins: [
           "gatsby-remark-unwrap-images",
-          "gatsby-remark-attr",
           {
             resolve: `gatsby-remark-images`,
             options: { maxWidth: 1920, linkImagesToOriginal: false },
