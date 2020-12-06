@@ -27,6 +27,7 @@
     "gatsby-plugin-sharp": "^2.6.20",
     "gatsby-plugin-styled-components": "^3.3.2",
     "gatsby-remark-attr": "^0.1.0",
+    "gatsby-remark-custom-blocks": "^2.6.0",
     "gatsby-remark-images": "^3.3.19",
     "gatsby-remark-unwrap-images": "^1.0.2",
     "gatsby-source-filesystem": "^2.3.20",

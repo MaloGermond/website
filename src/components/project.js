@@ -12,7 +12,7 @@ const Article = styled.article`
   gap: 1rem;
   margin: 2rem;
 
-  .full-width {
+  .fullWidth {
     grid-column: 1/4 !important;
     width: 100%;
   }
@@ -22,21 +22,27 @@ const Article = styled.article`
     grid-column: 2/3;
   }
 
-  .gallery {
+  .galleryCol2 {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     padding-top: 1rem;
+
+    span {
+      width: calc(50% - 1rem);
+      height: 100%;
+    }
   }
 
-  .col-2 span {
-    width: calc(50% - 1rem);
-    height: 100%;
-  }
-
-  .col-3 span {
-    width: calc(33% - 1rem);
-    height: 100%;
+  .galleryCol3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+    span {
+      width: calc(33% - 1rem);
+      height: 100%;
+    }
   }
 
   p,
@@ -45,9 +51,14 @@ const Article = styled.article`
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  blockquote {
     max-width: 600px;
     grid-column: 2/3;
+  }
+
+  .footnotes {
+    grid-column: 3/4;
   }
 
   & img {

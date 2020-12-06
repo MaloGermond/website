@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout.js"
 import { useStaticQuery, graphql } from "gatsby"
+import Project from "../components/project.js"
 
 export default function Manifest() {
   const data = useStaticQuery(graphql`
@@ -23,14 +24,7 @@ export default function Manifest() {
   `)
   return (
     <Layout>
-      {data.markdownRemark != null ? (
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
-      ) : (
-        "Humm this document looks empty 😶"
-      )}
+      <Project content={data.markdownRemark} cartel="false"></Project>
     </Layout>
   )
 }
