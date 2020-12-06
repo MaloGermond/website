@@ -13,11 +13,11 @@ cover: "01.jpg"
 
 ![](02.jpg){.full-width}
 
-## Le dispositif
+## Le dispositif{.full-width}
 
 Dans un programme, les données d’un ordinateur sont comme les mailles d’un tricot, ce sont de petits éléments, qui mis en forme et assemblées par le code, interagissent entre eux et créent un ensemble lisible et compréhensible. Pratiquer la machine à tricoter nous amène à comprendre son fonctionnement : c’est à dire comment sa matière, la laine se forme en maille puis en tricot.
 
-![](09.jpg)
+![](09.jpg){.full-width}
 
 ![](10.jpg)
 

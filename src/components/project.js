@@ -13,7 +13,7 @@ const Article = styled.article`
   margin: 2rem;
 
   .full-width {
-    grid-column: 1/4;
+    grid-column: 1/4 !important;
     width: 100%;
   }
 
