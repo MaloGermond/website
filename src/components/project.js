@@ -83,6 +83,21 @@ const Article = styled.article`
   @media (max-width: 768px) {
     margin: 1rem;
 
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    blockquote {
+      grid-column: 1/4;
+    }
+    .gatsby-resp-image-wrapper {
+      grid-column: 1/4;
+    }
+
     .galleryCol3 span {
       width: 100%;
     }

@@ -13,7 +13,8 @@ tag: "interface, application"
 cover: "cover.png"
 ---
 
-![Écrans de la page principale de l'application en train de fonctionner sur un ordinateur et sur un téléphone.](./crossPlatform.png)
+[[fullWidth]]
+|![Écrans de la page principale de l'application en train de fonctionner sur un ordinateur et sur un téléphone.](./crossPlatform.png)
 
 ![Écrans de l'application fonctionnant sur un téléphone.](./mobile.png)
 
