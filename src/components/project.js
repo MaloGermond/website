@@ -45,6 +45,7 @@ const Article = styled.article`
       flex-wrap: wrap;
       gap: 1rem;
       padding-top: 1rem;
+      justify-content: center;
     }
     span {
       width: calc(33% - 1rem);
@@ -80,7 +81,6 @@ const Article = styled.article`
   }
 
   @media (max-width: 768px) {
-    display: block;
     margin: 1rem;
 
     .galleryCol3 span {
