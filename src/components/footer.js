@@ -117,7 +117,7 @@ function Footer() {
 
       <Align>
         <Caption>
-          <Link to="/legal-mention">Mentions legal</Link>
+          <Link to="/legal-mention">Mentions légales</Link>
         </Caption>
       </Align>
       <Stack>

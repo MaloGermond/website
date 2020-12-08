@@ -4,6 +4,8 @@ import styled from "styled-components"
 
 const Section = styled.section`
   display: block;
+  max-width: 1536px;
+  margin: auto;
 `
 
 const Article = styled.article`
