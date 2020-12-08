@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Section = styled.section`
   display: block;
-  max-width: 1536px;
+  max-width: 1680px;
   margin: auto;
 `
 
