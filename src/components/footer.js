@@ -38,18 +38,19 @@ const Icon = styled.i`
 const SocialNetwork = styled.div`
   display: flex;
   gap: 0.5rem;
-
+  margin-left: 1rem;
+  margin-right: 1rem;
   & a {
     border-bottom-style: none;
   }
 `
 
-const FullWidth = styled.div`
+const Stack = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `
-const OneLine = styled.div`
+const Align = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -74,7 +75,52 @@ const Container = styled.footer`
 function Footer() {
   return (
     <Container>
-      <FullWidth>
+      <fullWidth>
+        <h6>Malo Germond</h6>
+        <p>
+          Designer produit basé à Marseille. Spécialisé dans la conception
+          d'interfaces.
+        </p>
+        <Align>
+          <SocialNetwork>
+            <OutboundLink
+              href="https://github.com/MaloGermond?tab=repositories"
+              target="_blank"
+              aria-label="github logo"
+            >
+              <Icon className="icon-github"></Icon>
+            </OutboundLink>
+            <OutboundLink
+              href="https://www.linkedin.com/in/malogermond/"
+              target="_blank"
+              aria-label="Linkedin logo"
+            >
+              <Icon className="icon-linkedin"></Icon>
+            </OutboundLink>
+            <OutboundLink
+              href="https://twitter.com/MaloGermond"
+              target="_blank"
+              aria-label="Twitter logo"
+            >
+              <Icon className="icon-twitter"></Icon>
+            </OutboundLink>
+          </SocialNetwork>
+          <Button
+            action="mailto:malo.germond@gmail.com"
+            ariaLabel="Me contacter"
+            style={theme.secondary}
+          >
+            Me contacter
+          </Button>
+        </Align>
+      </fullWidth>
+
+      <Align>
+        <Caption>
+          <Link to="/legal-mention">Mentions legal</Link>
+        </Caption>
+      </Align>
+      <Stack>
         <Caption>
           Copyright © 2016 - 2020 - All Rights Reserved - Marseille{" "}
         </Caption>
@@ -88,45 +134,7 @@ function Footer() {
             🚀
           </span>{" "}
         </Caption>
-      </FullWidth>
-
-      <OneLine>
-        <SocialNetwork>
-          <OutboundLink
-            href="https://github.com/MaloGermond?tab=repositories"
-            target="_blank"
-            aria-label="github logo"
-          >
-            <Icon className="icon-github"></Icon>
-          </OutboundLink>
-          <OutboundLink
-            href="https://www.linkedin.com/in/malogermond/"
-            target="_blank"
-            aria-label="Linkedin logo"
-          >
-            <Icon className="icon-linkedin"></Icon>
-          </OutboundLink>
-          <OutboundLink
-            href="https://twitter.com/MaloGermond"
-            target="_blank"
-            aria-label="Twitter logo"
-          >
-            <Icon className="icon-twitter"></Icon>
-          </OutboundLink>
-        </SocialNetwork>
-        <Button
-          action="mailto:malo.germond@gmail.com"
-          ariaLabel="Me contacter"
-          style={theme.secondary}
-        >
-          Me contacter
-        </Button>
-      </OneLine>
-      <FullWidth>
-        <Caption>
-          <Link to="/legal-mention">Mentions legal</Link>
-        </Caption>
-      </FullWidth>
+      </Stack>
     </Container>
   )
 }

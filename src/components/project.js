@@ -106,7 +106,9 @@ const Article = styled.article`
     }
 
     .gatsby-resp-image-wrapper,
-    .caption {
+    .caption,
+    .galleryCol3,
+    .galleryCol2 {
       grid-column: 1/4;
     }
 
