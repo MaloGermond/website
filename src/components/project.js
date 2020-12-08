@@ -22,8 +22,18 @@ const Article = styled.article`
     grid-column: 2/3;
   }
 
+  .caption {
+    grid-column: 3/4;
+    align-self: end;
+    font-size: 0.8rem;
+
+    border-left: black;
+    border-left-style: solid;
+    padding-left: 1rem;
+  }
+
   .galleryCol2 {
-    grid-column: 1/4;
+    grid-column: 2/3;
 
     .custom-block-body {
       display: flex;
@@ -38,7 +48,7 @@ const Article = styled.article`
   }
 
   .galleryCol3 {
-    grid-column: 1/4;
+    grid-column: 2/3;
 
     .custom-block-body {
       display: flex;
@@ -94,7 +104,9 @@ const Article = styled.article`
     blockquote {
       grid-column: 1/4;
     }
-    .gatsby-resp-image-wrapper {
+
+    .gatsby-resp-image-wrapper,
+    .caption {
       grid-column: 1/4;
     }
 

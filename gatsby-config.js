@@ -91,6 +91,9 @@ module.exports = {
                 galleryCol2: {
                   classes: "galleryCol2",
                 },
+                caption: {
+                  classes: "caption",
+                },
               },
             },
           },

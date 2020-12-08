@@ -17,6 +17,8 @@ cover: "cover.jpg"
 
 ![](flacon proche.jpg)
 
+### Triennal de Milan 2016
+
 [[galleryCol2]]
 |![](milan 01.jpg)
 |![](milan 03.jpg)

@@ -22,6 +22,9 @@ Dans un programme, les données d’un ordinateur sont comme les mailles d’un 
 
 ![](10.jpg)
 
+[[caption]]
+|Échantillons qui ont été tricotés à la main et dont le dessin a été composé à l’aide de l'application.)
+
 ## Le mode d'emploi
 
 Édition accompagnant l'interface qui liste les différents éléments et explique leurs fonctionnements.
@@ -33,6 +36,8 @@ Dans un programme, les données d’un ordinateur sont comme les mailles d’un 
 |![](15.jpg)
 |![](17.jpg)
 |![](18.jpg)
+
+### DDays 2017
 
 [[galleryCol3]]
 |![](ddays02.jpg)
