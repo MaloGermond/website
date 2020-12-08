@@ -4,6 +4,8 @@ import styled from "styled-components"
 
 const Section = styled.section`
   display: block;
+  max-width: 1680px;
+  margin: auto;
 `
 
 const Article = styled.article`
@@ -12,25 +14,55 @@ const Article = styled.article`
   gap: 1rem;
   margin: 2rem;
 
-  .full-width {
+  .fullWidth {
     grid-column: 1/4;
+    width: 100%;
   }
 
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 1rem;
+  .gatsby-resp-image-wrapper {
+    width: 100%;
+    grid-column: 2/3;
   }
 
-  .col-2 span {
-    width: calc(50% - 1rem);
-    height: 100%;
+  .caption {
+    grid-column: 3/4;
+    align-self: end;
+    font-size: 0.8rem;
+
+    border-left: black;
+    border-left-style: solid;
+    padding-left: 1rem;
   }
 
-  .col-3 span {
-    width: calc(33% - 1rem);
-    height: 100%;
+  .galleryCol2 {
+    grid-column: 2/3;
+
+    .custom-block-body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
+    span {
+      width: calc(50% - 1rem);
+      height: 100%;
+    }
+  }
+
+  .galleryCol3 {
+    grid-column: 2/3;
+
+    .custom-block-body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 1rem;
+      justify-content: center;
+    }
+    span {
+      width: calc(33% - 1rem);
+      height: 100%;
+    }
   }
 
   p,
@@ -39,17 +71,19 @@ const Article = styled.article`
   h3,
   h4,
   h5,
-  h6 {
-    max-width: none;
+  h6,
+  ul,
+  blockquote {
+    max-width: 600px;
     grid-column: 2/3;
+  }
+
+  .footnotes {
+    grid-column: 3/4;
   }
 
   & img {
     border-radius: 4px;
-  }
-
-  & a {
-    border-style: none;
   }
 
   & table {
@@ -59,24 +93,47 @@ const Article = styled.article`
   }
 
   @media (max-width: 768px) {
-    display: block;
     margin: 1rem;
 
-    .gallery span {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    blockquote {
+      grid-column: 1/4;
+    }
+
+    .gatsby-resp-image-wrapper,
+    .caption,
+    .galleryCol3,
+    .galleryCol2 {
+      grid-column: 1/4;
+    }
+
+    .galleryCol3 span {
+      width: 100%;
+    }
+
+    .galleryCol2 span {
       width: 100%;
     }
   }
 `
 
-export default function Project(content) {
-  content = content.content
+export default function Project(props) {
   return (
     <Section>
-      <Cartel frontmatter={content.frontmatter} />
-      {content != null ? (
+      {props.cartel != null ? null : (
+        <Cartel frontmatter={props.content.frontmatter} />
+      )}
+      {props.content != null ? (
         <Article
           className="project"
-          dangerouslySetInnerHTML={{ __html: content.html }}
+          dangerouslySetInnerHTML={{ __html: props.content.html }}
         />
       ) : (
         "Humm this document looks empty 😶"

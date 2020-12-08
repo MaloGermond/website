@@ -73,10 +73,29 @@ module.exports = {
         gfm: true,
         // Plugins configs
         plugins: [
-          "gatsby-remark-attr",
+          "gatsby-remark-unwrap-images",
           {
             resolve: `gatsby-remark-images`,
             options: { maxWidth: 1920, linkImagesToOriginal: false },
+          },
+          {
+            resolve: "gatsby-remark-custom-blocks",
+            options: {
+              blocks: {
+                fullWidth: {
+                  classes: "fullWidth",
+                },
+                galleryCol3: {
+                  classes: "galleryCol3",
+                },
+                galleryCol2: {
+                  classes: "galleryCol2",
+                },
+                caption: {
+                  classes: "caption",
+                },
+              },
+            },
           },
         ],
       },

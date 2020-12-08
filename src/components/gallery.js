@@ -77,7 +77,6 @@ function Gallery() {
       }
     }
   `)
-  console.log({ data })
   return (
     <Container>
       {data.allMarkdownRemark.nodes.map((project, id) => (

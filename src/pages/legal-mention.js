@@ -3,14 +3,10 @@ import Layout from "../components/layout.js"
 import { useStaticQuery, graphql } from "gatsby"
 import Project from "../components/project.js"
 
-export default function Manifest() {
+export default function LegalMention() {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(
-        frontmatter: {
-          title: { eq: "Pour un regard nouveau sur l'ordinateur" }
-        }
-      ) {
+      markdownRemark(frontmatter: { title: { eq: "Mention legal" } }) {
         frontmatter {
           date
           description
@@ -23,7 +19,7 @@ export default function Manifest() {
     }
   `)
   return (
-    <Layout>
+    <Layout pathname="/mention-legal">
       <Project content={data.markdownRemark} cartel="false"></Project>
     </Layout>
   )

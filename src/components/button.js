@@ -31,7 +31,7 @@ const Contained = styled.button`
 `
 
 const Icon = styled.i`
-  height: 1rem;
+  font-size: 1.3rem;
 `
 
 Button.defaultProps = {

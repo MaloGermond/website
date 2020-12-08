@@ -19,7 +19,7 @@ Voici un paragraphe. <br/> Et nous sommes toujours dans le même paragraphe.
 Ceci ne doit pas être considère comme un nouveaux paragraphe[^1].
 
 Par contre ceci est bien un nouveau paragraphe. 😅
-Voici un lien vers la **homepage** du site [Je suis un lien souligné](https://www.malogermond.fr)
+Voici un lien vers la **homepage** du site [Je suis un lien souligné](![malogermond.fr](https://www.malogermond.fr))
 
 ![Voici un example d'image](iphone.png)
 
