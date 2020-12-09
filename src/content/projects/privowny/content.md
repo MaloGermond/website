@@ -2,7 +2,7 @@
 title: "Privowny App"
 link: "privowny"
 homepage: true
-order: 2
+priority: 2
 date: "Depuis 2019"
 description: "L’application Privowny est un gestionnaire de mots de passe et d’aliasing d’email. Il permet de s’enregistrer sur le web de manière anonyme.
 L’application fournit aussi un ensemble de modules permettant à un utilisateur le contrôle sur la trace des données qu’il laisse sur le web.
