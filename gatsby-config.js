@@ -94,6 +94,18 @@ module.exports = {
                 caption: {
                   classes: "caption",
                 },
+                leftAlign: {
+                  classes: "leftAlign",
+                },
+                rightAlign: {
+                  classes: "rightAlign",
+                },
+                overlapTop: {
+                  classes: "overlapTop",
+                },
+                overlapBottom: {
+                  classes: "overlapBottom",
+                },
               },
             },
           },

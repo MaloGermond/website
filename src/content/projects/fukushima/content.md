@@ -11,11 +11,15 @@ tag: "objet, numérique"
 cover: "cover.jpg"
 ---
 
-![](trois flacons.jpg)
+[[leftAlign]]
+|![](trois flacons.jpg)
 
-![](pillulier ensemble.jpg)
+[[rightAlign]]
+|[[overlapTop]]
+||![](pillulier ensemble.jpg)
 
-![](flacon proche.jpg)
+[[leftAlign]]
+|![](flacon proche.jpg)
 
 ### Triennal de Milan 2016
 

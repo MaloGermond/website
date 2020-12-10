@@ -4,13 +4,22 @@ link: "Splash"
 homepage: false
 priority: 5
 date: "2018"
-description: ""
+description: "Splash est une proposition d'enceinte mobile."
 cover: "cover.jpg"
 ---
 
-![](01.jpg)
-![](02.jpg)
-![](03.jpg)
-![](04.jpg)
-![](05.jpg)
-![](06.jpg)
+[[rightAlign]]
+|![](01.jpg)
+
+[[leftAlign]]
+|[[overlapTop]]
+||![](02.jpg)
+
+[[rightAlign]]
+|![](03.jpg)
+
+[[fullWidth]]
+|![](04.jpg)
+
+[[fullWidth]]
+|![](05.jpg)
