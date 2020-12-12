@@ -8,23 +8,24 @@ description: "Label Fukushima part d'un scénario. Tepco, l'entreprise qui gère
 En nous basant sur un scénario presque absurde, la construction d'un centre de soins fictifs à Fukushima, destiné à lutter contre le cancer que lui-même engendre, nous avons cherché à interroger le lien entre esthétique d'un objet ou d'une image et son sens.
 Label Fukushima a été présenté à l'exposition Fukushima mon amours lors du off du salon du meuble de Milan en 2016."
 tag: "objet, numérique"
-cover: "cover.jpg"
+cover: "Cover-MaloGermond.png"
 ---
 
-[[leftAlign]]
-|![](trois flacons.jpg)
+[[galleryCol3]]
+|![](Flacon01-MaloGermond.png)
+|![](Flacon02-MaloGermond.png)
+|![](Flacon03-MaloGermond.png)
 
-[[rightAlign]]
-|[[overlapTop]]
-||![](pillulier ensemble.jpg)
+![](ensemblePillulier-MaloGermond.png)
 
-[[leftAlign]]
-|![](flacon proche.jpg)
+[[galleryCol2]]
+|![](texturEpic-MaloGermond.png)
+|![](textureVague-MaloGermond.png)
 
 ### Triennal de Milan 2016
 
 [[galleryCol2]]
-|![](milan 01.jpg)
-|![](milan 03.jpg)
-|![](milan 02.jpg)
-|![](milan 04.jpg)
+|![](TriennalDeMilan01-MaloGermond.png)
+|![](TriennalDeMilan02-MaloGermond.png)
+|![](TriennalDeMilan03-MaloGermond.png)
+|![](TriennalDeMilan04-MaloGermond.png)

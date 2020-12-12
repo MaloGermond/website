@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Section = styled.section`
   display: block;
-  max-width: 1680px;
+  max-width: 1536px;
   margin: auto;
 `
 
@@ -57,14 +57,13 @@ const Article = styled.article`
     grid-column: 3/6;
 
     .custom-block-body {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
-      padding-top: 1rem;
     }
     span {
-      width: calc(50% - 1rem);
-      height: 100%;
+      width: 100%;
+      grid-column: auto;
     }
   }
 
@@ -72,15 +71,13 @@ const Article = styled.article`
     grid-column: 3/6;
 
     .custom-block-body {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 1rem;
-      padding-top: 1rem;
-      justify-content: center;
     }
     span {
-      width: calc(33% - 1rem);
-      height: 100%;
+      width: 100%;
+      grid-column: auto;
     }
   }
 
@@ -112,6 +109,8 @@ const Article = styled.article`
   }
 
   @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin: 1rem;
     p,
     h1,
     h2,
@@ -121,18 +120,18 @@ const Article = styled.article`
     h6,
     ul,
     blockquote {
-      grid-column: 2/7;
+      grid-column: 1;
     }
 
     .fullWidth {
-      grid-column: 3/7;
+      grid-column: 1;
     }
 
     .gatsby-resp-image-wrapper,
     .caption,
-    .galleryCol3,
-    .galleryCol2 {
-      grid-column: 2/7;
+    .galleryCol2,
+    .galleryCol3 {
+      grid-column: 1;
     }
 
     .galleryCol3 span {
