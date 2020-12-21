@@ -18,9 +18,10 @@ cover: "Cover-MaloGermond.png"
 
 ![](ensemblePillulier-MaloGermond.png)
 
-[[galleryCol2]]
-|![](texturEpic-MaloGermond.png)
-|![](textureVague-MaloGermond.png)
+[[galleryCol3]]
+|![](texture1-MaloGermond.png)
+|![](texture2-MaloGermond.png)
+|![](texture3-MaloGermond.png)
 
 ### Triennal de Milan 2016
 

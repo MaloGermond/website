@@ -6,6 +6,7 @@ priority: 5
 date: "2018"
 description: "Splash est une proposition d'enceinte mobile."
 cover: "cover.jpg"
+tag: "ux, scenario d'usage, illustration"
 ---
 
 [[rightAlign]]
