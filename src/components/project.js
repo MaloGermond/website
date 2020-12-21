@@ -4,28 +4,47 @@ import styled from "styled-components"
 
 const Section = styled.section`
   display: block;
-  max-width: 1680px;
+  max-width: 1536px;
   margin: auto;
 `
 
 const Article = styled.article`
   display: grid;
-  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 1rem 1fr 1fr 1fr 1fr 1fr 1rem;
   gap: 1rem;
-  margin: 2rem;
 
   .fullWidth {
-    grid-column: 1/4;
+    grid-column: 1/8;
     width: 100%;
+    border-raius: 0;
+  }
+
+  .leftAlign {
+    grid-column: 3 / span 2;
+  }
+
+  .rightAlign {
+    grid-column: 4 / span 2;
+  }
+
+  .overlapTop {
+    transform: translate(0, -4rem);
+    z-index: 1;
+  }
+
+  .overlapBottom {
+    transform: translate(0, 4rem);
+    z-index: 1;
   }
 
   .gatsby-resp-image-wrapper {
     width: 100%;
-    grid-column: 2/3;
+    grid-column: 3/6;
+    z-index: 0;
   }
 
   .caption {
-    grid-column: 3/4;
+    grid-column: 6/7;
     align-self: end;
     font-size: 0.8rem;
 
@@ -35,33 +54,30 @@ const Article = styled.article`
   }
 
   .galleryCol2 {
-    grid-column: 2/3;
+    grid-column: 3/6;
 
     .custom-block-body {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
-      padding-top: 1rem;
     }
     span {
-      width: calc(50% - 1rem);
-      height: 100%;
+      width: 100%;
+      grid-column: auto;
     }
   }
 
   .galleryCol3 {
-    grid-column: 2/3;
+    grid-column: 3/6;
 
     .custom-block-body {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 1rem;
-      padding-top: 1rem;
-      justify-content: center;
     }
     span {
-      width: calc(33% - 1rem);
-      height: 100%;
+      width: 100%;
+      grid-column: auto;
     }
   }
 
@@ -75,7 +91,7 @@ const Article = styled.article`
   ul,
   blockquote {
     max-width: 600px;
-    grid-column: 2/3;
+    grid-column: 3/6;
   }
 
   .footnotes {
@@ -93,8 +109,8 @@ const Article = styled.article`
   }
 
   @media (max-width: 768px) {
+    grid-template-columns: 1fr;
     margin: 1rem;
-
     p,
     h1,
     h2,
@@ -104,14 +120,18 @@ const Article = styled.article`
     h6,
     ul,
     blockquote {
-      grid-column: 1/4;
+      grid-column: 1;
+    }
+
+    .fullWidth {
+      grid-column: 1;
     }
 
     .gatsby-resp-image-wrapper,
     .caption,
-    .galleryCol3,
-    .galleryCol2 {
-      grid-column: 1/4;
+    .galleryCol2,
+    .galleryCol3 {
+      grid-column: 1;
     }
 
     .galleryCol3 span {

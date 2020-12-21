@@ -64,7 +64,7 @@ function Gallery() {
           frontmatter {
             title
             link
-            order
+            priority
             cover {
               childImageSharp {
                 fluid(maxHeight: 400, quality: 100) {
@@ -81,10 +81,10 @@ function Gallery() {
     <Container>
       {data.allMarkdownRemark.nodes.map((project, id) => (
         <Cover
-          order={project.frontmatter.order}
+          order={project.frontmatter.priority}
           data-sal="fade"
           data-sal-duration="1000"
-          data-sal-delay={String(200 * project.frontmatter.order)}
+          data-sal-delay={String(200 * project.frontmatter.priority)}
           data-sal-easing="ease-in-out"
         >
           <Link
